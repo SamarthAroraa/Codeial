@@ -4,6 +4,7 @@
   "description": "My social media web application",
   "main": "index.js",
   "dependencies": {
+    "ejs": "^3.1.2",
     "express": "^4.17.1",
     "init": "^0.1.2",
     "node": "^14.2.0",
