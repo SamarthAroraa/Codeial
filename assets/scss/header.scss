@@ -1,0 +1,52 @@
+$main-brand-royalblue: #207ce9;
+$dark-shade: #212040;
+$light-shade: #f9f8f9;
+$light-accent: #5ac780;
+$dark-accent: #938289;
+header {
+  color: $light-shade;
+  font-size: 1.6rem;
+  line-height: 4rem;
+  box-shadow: 2px 2px rgba($color: #000000, $alpha: 0.3);
+  display: flex;
+  flex-direction: row;
+  text-transform: capitalize;
+
+  height: 4rem;
+  justify-content: space-between;
+  background-color: $dark-shade;
+  #logo-header {
+    height: 4rem;
+    width: 4rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    &:hover {
+      background-color: #2a285e;
+    }
+    img {
+      height: 95%;
+      width: 95%;
+    }
+  }
+  ul {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    li {
+      width: 150px;
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      &:hover {
+        background-color: #2a285e;
+      }
+    }
+    a {
+      margin: 0 10px;
+      color: $light-shade;
+      text-decoration: none;
+    }
+  }
+}
