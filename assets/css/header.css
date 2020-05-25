@@ -2,7 +2,6 @@ header {
   color: #f9f8f9;
   font-size: 1.6rem;
   line-height: 4rem;
-  box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: row;
   text-transform: capitalize;
