@@ -1,7 +1,15 @@
+const Post = require("../models/post");
 module.exports.home = function (req, res) {
-  console.log(req.cookies);
-  res.cookie("user-id", 25);
-  res.render("home", {
-    title: " Codial Home",
-  });
+  Post.find({})
+    .populate("user")
+    .exec(function (err, posts) {
+      if (err) {
+        console.log("error getting posts from DB");
+        return;
+      }
+      return res.render("home", {
+        title: "Codial | Home",
+        feed: posts,
+      });
+    });
 };

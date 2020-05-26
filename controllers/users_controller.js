@@ -1,4 +1,6 @@
 const User = require("../models/user");
+const Post = require("../models/post");
+
 module.exports.profile = function (req, res) {
   res.render("user_profile", {
     title: "Your Profile",
@@ -10,7 +12,7 @@ module.exports.signUp = function (req, res) {
     return res.redirect("/users/profile");
   } else {
     res.render("user_sign_up", {
-      title: "Codeial|Sign-up",
+      title: "Codeial | Sign-up",
     });
   }
 };

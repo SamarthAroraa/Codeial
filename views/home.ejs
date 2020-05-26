@@ -1,3 +1,26 @@
-<link rel="stylesheet" href="test.css" />
 <h1><%=title %></h1>
-<script src="test.js"></script>
+<section id="post-feed">
+  <% if(locals.user){ %>
+
+  <h4>Your Feed</h4>
+  <form action="/posts/create" method="POST" id="new-post-form">
+    <textarea
+      name="content"
+      id=""
+      cols="30"
+      rows="3"
+      placeholder="What's on your mind?..."
+    ></textarea>
+    <input type="submit" id="submit-button" value="Post" />
+  </form>
+  <div id="posts-list-container">
+    <ul>
+      <% for(i of feed){ %>
+      <p>
+        <li><%= i.content %> <br /><small><%= i.user.name %></small></li>
+      </p>
+      <% } %>
+    </ul>
+  </div>
+  <% } %>
+</section>

@@ -5,7 +5,11 @@ body {
   font-family: "Roboto Mono", monospace;
   margin: 0em;
   #layout-main {
-    height: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3em;
   }
   /* text-align: center; */
 }
