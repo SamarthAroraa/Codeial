@@ -4,6 +4,7 @@
   "description": "My social media web application",
   "main": "index.js",
   "dependencies": {
+    "connect-flash": "^0.1.1",
     "connect-mongo": "^3.2.0",
     "cookie-parser": "^1.4.5",
     "ejs": "^3.1.2",
@@ -11,8 +12,8 @@
     "express-ejs-layouts": "^2.5.0",
     "express-session": "^1.17.1",
     "init": "^0.1.2",
-    "mongoose": "^5.9.15",
-    "node": "^14.2.0",
+    "mongoose": "^5.9.16",
+    "node": "^14.3.0",
     "node-sass-middleware": "^0.11.0",
     "npm": "^6.14.5",
     "passport": "^0.4.1",

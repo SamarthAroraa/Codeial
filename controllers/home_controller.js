@@ -1,15 +1,25 @@
 const Post = require("../models/post");
-module.exports.home = function (req, res) {
-  Post.find({})
-    .populate("user")
-    .exec(function (err, posts) {
-      if (err) {
-        console.log("error getting posts from DB");
-        return;
-      }
-      return res.render("home", {
-        title: "Codial | Home",
-        feed: posts,
+const User = require("../models/user");
+module.exports.home = async function (req, res) {
+  try {
+    let posts = await Post.find({})
+      .sort("-createdAt")
+      .populate("user")
+      .populate({
+        path: "comments",
+        populate: {
+          path: "user",
+        },
       });
+    let users = await User.find({});
+
+    return res.render("home", {
+      title: "Codial | Home",
+      feed: posts,
+      users: users,
     });
+  } catch (err) {
+    console.log(err);
+    return;
+  }
 };
