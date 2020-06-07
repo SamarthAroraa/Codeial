@@ -1,5 +1,7 @@
 const User = require("../models/user");
 const Post = require("../models/post");
+const fs = require("fs");
+const path = require("path");
 
 module.exports.profile = async function (req, res) {
   try {
@@ -77,18 +79,34 @@ module.exports.signOut = function (req, res) {
 };
 
 module.exports.update = async (req, res) => {
-  try {
-    if (req.user.id == req.params.id) {
+  if (req.user.id == req.params.id) {
+    try {
       let user = await User.findByIdAndUpdate(req.params.id, req.body);
-    } else {
-      req.flash("error", "Unauthorized action");
-      return res.status(401).send("Unauthorized");
-    }
-    return res.redirect("back");
-  } catch (err) {
-    console.log(err);
-    req.flash("error", "Unexpected error!");
+      User.uploadedAvatar(req, res, async function (err) {
+        if (err) console.log("***********Multer error!");
+        user.name = req.body.name;
+        user.email = req.body.email;
 
-    return res.redirect("back");
+        if (req.file) {
+          if (user.avatar) {
+            if (fs.existsSync(path.join(__dirname, "..", user.avatar))) {
+              fs.unlinkSync(path.join(__dirname, "..", user.avatar));
+              console.log(path.join(__dirname, "..", user.avatar));
+            }
+          }
+          user.avatar = User.avatarPath + "/" + req.file.filename;
+        }
+        user.save();
+      });
+      return res.redirect("back");
+    } catch (err) {
+      console.log(err);
+      req.flash("error", "Unexpected error!");
+    }
+  } else {
+    req.flash("error", "Unauthorized action");
+    return res.status(401).send("Unauthorized");
   }
+
+  return res.redirect("back");
 };
