@@ -3,49 +3,79 @@ $dark-shade: #212040;
 $light-shade: #f9f8f9;
 $light-accent: #5ac780;
 $dark-accent: #938289;
-header {
-  color: $light-shade;
-  font-size: 1.6rem;
-  line-height: 4rem;
-  display: flex;
-  flex-direction: row;
-  text-transform: capitalize;
+// nav {
+//   color: $light-shade;
+//   font-size: 1.6rem;
+//   line-height: 4rem;
+//   display: flex;
+//   flex-direction: row;
+//   text-transform: capitalize;
 
-  height: 4rem;
-  justify-content: space-between;
+//   height: 4rem;
+//   justify-content: space-between;
+//   background-color: $dark-shade;
+//   #logo-header {
+//     a {
+//       height: 4rem;
+//       width: 4rem;
+//       padding-left: 20px;
+//       padding-right: 20px;
+//       &:hover {
+//         background-color: #2a285e;
+//       }
+//       img {
+//         height: 100%;
+//         width: 100%;
+//       }
+//     }
+//   }
+//   ul {
+//     margin: 0;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     list-style: none;
+//     li {
+//       width: 150px;
+//       text-align: center;
+//       padding-left: 20px;
+//       padding-right: 20px;
+//       &:hover {
+//         background-color: #2a285e;
+//       }
+//     }
+//     a {
+//       margin: 0 10px;
+//       color: $light-shade;
+//       text-decoration: none;
+//     }
+//   }
+// }
+.navbar {
   background-color: $dark-shade;
+  .navbar-toggler-icon {
+    color: white;
+  }
+  padding: 0.25rem 1rem;
   #logo-header {
-    height: 4rem;
-    width: 4rem;
-    padding-left: 20px;
-    padding-right: 20px;
+    height: 50px;
+    width: 50px;
+  }
+  .btn-link {
     &:hover {
       background-color: #2a285e;
     }
-    img {
-      height: 95%;
-      width: 95%;
+  }
+  a {
+    .btn-link {
+      &:hover {
+        text-decoration: none;
+      }
+      text-transform: capitalize;
+      color: $light-shade;
     }
   }
-  ul {
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
-    li {
-      width: 150px;
-      text-align: center;
-      padding-left: 20px;
-      padding-right: 20px;
-      &:hover {
-        background-color: #2a285e;
-      }
-    }
-    a {
-      margin: 0 10px;
-      color: $light-shade;
-      text-decoration: none;
-    }
+  button {
+    margin: 0 20px;
   }
 }
