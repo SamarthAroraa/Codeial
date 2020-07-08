@@ -1,7 +1,5 @@
 body {
-  background-image: url("../images/back-ground.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #fff;
   font-family: "Roboto Mono", monospace;
   margin: 0em;
   /* text-align: center; */ }

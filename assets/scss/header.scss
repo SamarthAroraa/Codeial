@@ -1,8 +1,8 @@
-$main-brand-royalblue: #207ce9;
+$main-brand-royalblue: #fff;
 $dark-shade: #212040;
-$light-shade: #f9f8f9;
-$light-accent: #5ac780;
-$dark-accent: #938289;
+$light-shade: #e9b000;
+$light-accent: #eb6e80;
+$dark-accent: #008f95;
 // nav {
 //   color: $light-shade;
 //   font-size: 1.6rem;
@@ -52,7 +52,10 @@ $dark-accent: #938289;
 //   }
 // }
 .navbar {
-  background-color: $dark-shade;
+  position: sticky;
+  top: 0px;
+  margin-top: -2px;
+  background-color: transparent;
   .navbar-toggler-icon {
     color: white;
   }
@@ -71,6 +74,35 @@ $dark-accent: #938289;
       background-color: #2a285e;
     }
   }
+  .btn-outline-success {
+    color: $dark-accent;
+    border-color: #fff;
+    &:hover {
+      color: white;
+      background-color: $dark-accent;
+      border-color: $dark-accent;
+    }
+  }
+
+  //website logo
+  .navbar-brand {
+    transition: 0.3s all ease-in-out;
+    &:hover {
+      font-family: "Archivo Black", sans-serif;
+      font-size: 2.5em;
+      color: $light-shade;
+      #dot {
+        color: $dark-accent;
+      }
+    }
+    font-family: "Archivo Black", sans-serif;
+    font-size: 2.5em;
+    color: $dark-accent;
+    #dot {
+      color: $light-shade;
+    }
+  }
+
   a {
     .btn-link {
       &:hover {

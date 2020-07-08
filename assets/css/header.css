@@ -1,5 +1,8 @@
 .navbar {
-  background-color: #212040;
+  position: sticky;
+  top: 0px;
+  margin-top: -2px;
+  background-color: transparent;
   padding: 0.25rem 1rem; }
   .navbar .navbar-toggler-icon {
     color: white; }
@@ -12,9 +15,29 @@
     width: 50px; }
   .navbar .btn-link:hover {
     background-color: #2a285e; }
+  .navbar .btn-outline-success {
+    color: #008f95;
+    border-color: #fff; }
+    .navbar .btn-outline-success:hover {
+      color: white;
+      background-color: #008f95;
+      border-color: #008f95; }
+  .navbar .navbar-brand {
+    transition: 0.3s all ease-in-out;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 2.5em;
+    color: #008f95; }
+    .navbar .navbar-brand:hover {
+      font-family: "Archivo Black", sans-serif;
+      font-size: 2.5em;
+      color: #e9b000; }
+      .navbar .navbar-brand:hover #dot {
+        color: #008f95; }
+    .navbar .navbar-brand #dot {
+      color: #e9b000; }
   .navbar a .btn-link {
     text-transform: capitalize;
-    color: #f9f8f9; }
+    color: #e9b000; }
     .navbar a .btn-link:hover {
       text-decoration: none; }
   .navbar button {
