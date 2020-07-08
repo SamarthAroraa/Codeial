@@ -39,9 +39,21 @@ let storage = multer.diskStorage({
 });
 
 //static methods
-userSchema.statics.uploadedAvatar = multer({ storage: storage }).single(
-  "avatar"
-);
+userSchema.statics.uploadedAvatar = multer({
+  storage: storage,
+  fileFilter: function (req, file, cb) {
+    console.log("check:", path.extname(file.originalname));
+    var ext = path.extname(file.originalname);
+    if (ext !== ".png" && ext !== ".jpg" && ext !== ".gif" && ext !== ".jpeg") {
+      
+      return cb(new Error("Only images are allowed"));
+    }
+    cb(null, true);
+  },
+  limits: {
+    fileSize: 1024 * 1024,
+  },
+}).single("avatar");
 userSchema.statics.avatarPath = AVATAR_PATH;
 const User = mongoose.model("User", userSchema);
 module.exports = User;

@@ -31,6 +31,7 @@ module.exports.signUp = function (req, res) {
 //render the sign in page
 module.exports.signIn = function (req, res) {
   if (req.isAuthenticated()) {
+    req.flash("success", "Logged in Successfully!");
     return res.redirect("/users/profile");
   } else {
     res.render("user_sign_in", {
@@ -83,7 +84,12 @@ module.exports.update = async (req, res) => {
     try {
       let user = await User.findByIdAndUpdate(req.params.id, req.body);
       User.uploadedAvatar(req, res, async function (err) {
-        if (err) console.log("***********Multer error!");
+        req.flash("success", "Only images allowed");
+
+        if (err) {
+          console.log("***********Multer error!");
+          return res.redirect("back");
+        }
         user.name = req.body.name;
         user.email = req.body.email;
 
@@ -100,8 +106,7 @@ module.exports.update = async (req, res) => {
       });
       return res.redirect("back");
     } catch (err) {
-      console.log(err);
-      req.flash("error", "Unexpected error!");
+      console.log("error in uploading!", err);
     }
   } else {
     req.flash("error", "Unauthorized action");

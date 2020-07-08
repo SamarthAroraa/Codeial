@@ -3,6 +3,10 @@
   padding: 0.25rem 1rem; }
   .navbar .navbar-toggler-icon {
     color: white; }
+  .navbar #profile-pic-header {
+    height: 28px;
+    width: 28px;
+    border-radius: 100%; }
   .navbar #logo-header {
     height: 50px;
     width: 50px; }

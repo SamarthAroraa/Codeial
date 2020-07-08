@@ -41,7 +41,13 @@
     <!-- <li class="nav-item"> -->
     <a href="/users/profile/<%=user.  id%>">
       <button class="btn btn-link my-2 my-sm-0">
-        <%= user.name %>
+        <% if(user.avatar) { %>
+        <img
+          src="<%= user.avatar %>"
+          alt="<%= user.name %>"
+          id="profile-pic-header"
+        />
+        <% } %> <%= user.name %>
       </button></a
     >
     <!-- </li> -->
