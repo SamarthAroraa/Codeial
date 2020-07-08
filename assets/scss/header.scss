@@ -1,4 +1,4 @@
-$main-brand-royalblue: #fff;
+$main-brand-royalblue: rgb(252, 245, 235);
 $dark-shade: #212040;
 $light-shade: #e9b000;
 $light-accent: #eb6e80;
@@ -75,8 +75,9 @@ $dark-accent: #008f95;
     }
   }
   .btn-outline-success {
+    border-radius: 2px;
     color: $dark-accent;
-    border-color: #fff;
+    border-color: rgb(255, 244, 229);
     &:hover {
       color: white;
       background-color: $dark-accent;

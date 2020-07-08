@@ -16,8 +16,9 @@
   .navbar .btn-link:hover {
     background-color: #2a285e; }
   .navbar .btn-outline-success {
+    border-radius: 2px;
     color: #008f95;
-    border-color: #fff; }
+    border-color: #fff4e5; }
     .navbar .btn-outline-success:hover {
       color: white;
       background-color: #008f95;
