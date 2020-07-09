@@ -32,9 +32,11 @@ $dark-accent: #008f95;
   flex-direction: column;
   justify-content: space-between;
   .signin {
-    width: 20vw;
+    // width: 20vw;
     height: 50px;
     .btn-info {
+      padding-left: 2.5em;
+      padding-right: 2.5em;
       background-color: $dark-accent;
       border-color: $dark-accent;
       margin-top: 60px;
@@ -46,6 +48,10 @@ $dark-accent: #008f95;
       font-weight: 600;
       width: 100%;
       height: 100%;
+      &:hover {
+        background-color: $light-shade;
+        border-color: $light-shade;
+      }
     }
   }
   //   justify-content: ;
@@ -54,6 +60,7 @@ $dark-accent: #008f95;
     margin-right: -40px;
     position: relative;
     h1 {
+      line-height: 100%;
       border-right: solid 4px $light-shade;
       white-space: nowrap;
       overflow: hidden;
