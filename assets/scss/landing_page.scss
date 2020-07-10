@@ -78,8 +78,8 @@ $dark-accent: #008f95;
   .main-image {
     position: relative;
     // margin-top: -30px;
-    height: 60%;
-    width: 60%;
+    height: 67%;
+    width: 67%;
     img {
       height: 100%;
       width: 100%;
@@ -87,6 +87,7 @@ $dark-accent: #008f95;
   }
   .caption-text {
     position: relative;
+    top: 10px;
     // margin-top: -40px;
 
     #code {

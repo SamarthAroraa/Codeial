@@ -1,11 +1,17 @@
 .navbar {
+  z-index: 1;
   position: sticky;
   top: 0px;
   margin-top: -2px;
   background-color: transparent;
+  transition: 500ms ease;
+  line-height: 100%;
+  height: 60px;
   padding: 0.25rem 1rem; }
   .navbar .navbar-toggler-icon {
     color: white; }
+  .navbar .btn {
+    font-size: 1.2em; }
   .navbar #profile-pic-header {
     height: 28px;
     width: 28px;
@@ -18,7 +24,7 @@
   .navbar .btn-outline-success {
     border-radius: 2px;
     color: #008f95;
-    border-color: #fff4e5; }
+    border-color: transparent; }
     .navbar .btn-outline-success:hover {
       color: white;
       background-color: #008f95;
@@ -35,6 +41,7 @@
       .navbar .navbar-brand:hover #dot {
         color: #008f95; }
     .navbar .navbar-brand #dot {
+      transition: 500ms ease;
       color: #e9b000; }
   .navbar a .btn-link {
     text-transform: capitalize;
@@ -43,3 +50,21 @@
       text-decoration: none; }
   .navbar button {
     margin: 0 20px; }
+
+.scrolled {
+  background-color: #00686c; }
+  .scrolled .btn-outline-success {
+    background-color: white;
+    color: #008f95;
+    border-color: transparent; }
+    .scrolled .btn-outline-success:hover {
+      background-color: #e4b528; }
+  .scrolled .navbar-brand {
+    color: white; }
+    .scrolled .navbar-brand #dot {
+      color: white; }
+    .scrolled .navbar-brand:hover {
+      opacity: 1;
+      color: #e9b000; }
+      .scrolled .navbar-brand:hover #dot {
+        color: #e9b000; }

@@ -1,6 +1,6 @@
 body {
   background-color: #fcf5eb;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Source Sans Pro", sans-serif;
   margin: 0em;
   /* text-align: center; */ }
   body #layout-main {
@@ -11,3 +11,9 @@ body {
     align-items: center; }
     body #layout-main * {
       box-sizing: border-box; }
+  body .btn-outline-success:not(:disabled):not(.disabled):active {
+    background-color: #008f95;
+    border-color: transparent; }
+  body .btn-outline-success.focus,
+  body .btn-outline-success:focus {
+    box-shadow: none; }

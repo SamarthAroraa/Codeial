@@ -54,13 +54,14 @@
         color: #e9b000; }
   .container .main-image {
     position: relative;
-    height: 60%;
-    width: 60%; }
+    height: 67%;
+    width: 67%; }
     .container .main-image img {
       height: 100%;
       width: 100%; }
   .container .caption-text {
     position: relative;
+    top: 10px;
     letter-spacing: 0.05em;
     word-spacing: 0.3em;
     font-size: 2em;

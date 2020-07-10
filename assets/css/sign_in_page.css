@@ -1,0 +1,108 @@
+.mycontainer {
+  width: 90vw;
+  margin: 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .mycontainer .signup-form {
+    order: 1;
+    font-family: "Source Sans Pro", sans-serif; }
+  .mycontainer .form-control {
+    font-size: 16px;
+    transition: all 0.4s;
+    box-shadow: none; }
+  .mycontainer .form-control:focus {
+    border-color: #008f95; }
+  .mycontainer .form-control,
+  .mycontainer .btn {
+    border-radius: 50px;
+    outline: none !important; }
+  .mycontainer .signup-form {
+    width: 480px;
+    margin: 0px 40px;
+    position: relative;
+    right: 30px;
+    padding: 30px 0; }
+  .mycontainer .signup-form form {
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background: #fff;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 40px; }
+  .mycontainer .signup-form a {
+    color: #008f95; }
+  .mycontainer .signup-form h2 {
+    text-align: center;
+    font-size: 34px;
+    margin: 10px 0 15px; }
+  .mycontainer .signup-form .hint-text {
+    color: #999;
+    text-align: center;
+    margin-bottom: 20px; }
+  .mycontainer .signup-form .form-group {
+    margin-bottom: 20px; }
+  .mycontainer .signup-form .btn {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    text-align: center; }
+  .mycontainer .signup-btn {
+    text-align: center;
+    border-color: transparent;
+    transition: all 0.4s; }
+  .mycontainer .signup-btn:hover {
+    background: #26a4a9;
+    opacity: 0.8; }
+  .mycontainer .or-seperator {
+    margin: 50px 0 15px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0; }
+  .mycontainer .or-seperator b {
+    padding: 0 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    background: #fff;
+    display: inline-block;
+    border: 1px solid #e0e0e0;
+    border-radius: 50%;
+    position: relative;
+    top: -22px;
+    z-index: 1; }
+  .mycontainer .social-btn .btn {
+    color: #fff;
+    margin: 10px 0 0 15px;
+    font-size: 15px;
+    border-radius: 50px;
+    font-weight: normal;
+    border: none;
+    transition: all 0.4s; }
+  .mycontainer .social-btn .btn:first-child {
+    margin-left: 0; }
+  .mycontainer .social-btn .btn:hover {
+    opacity: 0.8; }
+  .mycontainer .social-btn .btn-primary {
+    background: #507cc0; }
+  .mycontainer .social-btn .btn-info {
+    background: #64ccf1; }
+  .mycontainer .social-btn .btn-danger {
+    background: #e24e42; }
+  .mycontainer .social-btn .btn i {
+    float: left;
+    margin: 3px 10px;
+    font-size: 20px; }
+  .mycontainer .btn-success {
+    background-color: #008f95; }
+    .mycontainer .btn-success:hover {
+      border-color: transparent; }
+  .mycontainer .sitting-image {
+    position: relative;
+    left: 30px;
+    height: 550px;
+    width: 550px;
+    order: 0; }
+    .mycontainer .sitting-image img {
+      height: 100%;
+      width: 100%; }
