@@ -7,7 +7,7 @@ module.exports.profile = async function (req, res) {
   try {
     let user = await User.findById(req.params.id);
     return res.render("user_profile", {
-      title: "Your Profile",
+      title: `${user.name}`,
       profile_user: user,
     });
   } catch (err) {
@@ -114,4 +114,20 @@ module.exports.update = async (req, res) => {
   }
 
   return res.redirect("back");
+};
+
+module.exports.resetPassword = function (req, res) {
+  return res.render("forgot_password", {
+    title: "Forgot Password",
+  });
+};
+
+module.exports.sendResetLink = function (req, res) {
+  //check if user exists in DB- if yes, flash message the reset email sent and carry on with the listed steps. If does not exist then flash "No users found" and return back
+  //0) generate token
+  //1)interpolate in the string to make the link
+  //2)store reset link in mongo with validity(true), user(req.user), token(token)
+  //3)send mail with reset link
+  //4)return to render a view which informs that mail has been sent with reset instructions
+  return res.redirect("back"); //TO BE CHANGED TO POINT 4'S VIEW
 };

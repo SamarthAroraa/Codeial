@@ -1,3 +1,12 @@
+<script type="text/javascript">
+  function preventBack() {
+    window.history.forward();
+  }
+  setTimeout("preventBack()", 0);
+  window.onunload = function () {
+    null;
+  };
+</script>
 <link rel="stylesheet" href="/css/home.css" />
 <div id="feed-container">
   <section id="right-section"></section>
@@ -5,6 +14,7 @@
   <section id="post-feed">
     <h4>Your Feed</h4>
     <% if(locals.user) {%>
+
     <form action="/posts/create" method="POST" id="new-post-form">
       <textarea
         name="content"
