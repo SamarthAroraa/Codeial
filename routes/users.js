@@ -10,7 +10,11 @@ router.get(
 );
 router.get("/sign-up", usersController.signUp);
 router.get("/sign-in", usersController.signIn);
+router.get("/reset-password", usersController.resetPassword);
+router.get("/reset-page/:token", usersController.resetPage);
 router.post("/create", usersController.create);
+router.post("/send-reset-link", usersController.sendResetLink);
+router.post("/change-password/:token", usersController.changePassword);
 router.post(
   "/update/:id",
   passport.checkAuthentication,

@@ -6,7 +6,7 @@ module.exports.create = async (req, res) => {
       user: req.user._id,
       content: req.body.content,
     });
-    console.log(post);
+    // console.log(post);
     if (req.xhr) {
       req.flash("success", "Post published!");
       post = await post.populate("user", "name").execPopulate();

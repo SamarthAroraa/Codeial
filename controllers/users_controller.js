@@ -2,12 +2,16 @@ const User = require("../models/user");
 const Post = require("../models/post");
 const fs = require("fs");
 const path = require("path");
+const queue = require("../config/kue");
+const resetWorker = require("../workers/reset-password_worker");
+const ResetPassword = require("../models/reset-password");
+const randomString = require("randomstring");
 
 module.exports.profile = async function (req, res) {
   try {
     let user = await User.findById(req.params.id);
     return res.render("user_profile", {
-      title: "Your Profile",
+      title: `${user.name}`,
       profile_user: user,
     });
   } catch (err) {
@@ -53,7 +57,7 @@ module.exports.create = async function (req, res) {
       let user = await User.create(req.body);
       return res.redirect("/users/sign-in");
     } else {
-      flash.error("error", "User with this email id already exists");
+      req.flash("error", "User with this email id already exists");
       return res.redirect("back");
     }
   } catch (err) {
@@ -114,4 +118,90 @@ module.exports.update = async (req, res) => {
   }
 
   return res.redirect("back");
+};
+
+module.exports.resetPassword = function (req, res) {
+  return res.render("forgot_password", {
+    title: "Forgot Password",
+  });
+};
+
+module.exports.sendResetLink = async function (req, res) {
+  let user = await User.findOne({ email: req.body.email });
+  if (!user) {
+    req.flash("error", "No users found.");
+    return res.redirect("back");
+  } else {
+    let reset = await ResetPassword.create({
+      user: user,
+      isvalid: true,
+      accessToken: randomString.generate(),
+    });
+    // console.log(reset, "**************************");
+    let job = queue
+      .create("ResetEmail", reset)
+      .priority("high")
+      .save(function (err) {
+        if (err) {
+          console.log("error in sending job to queue", err);
+          return;
+        }
+      });
+    console.log(job.id);
+    req.flash("success", `Reset password link mailed to ${req.body.email}`);
+  }
+  //check if user exists in DB- if yes, flash message the reset email sent and carry on with the listed steps. If does not exist then flash "No users found" and return back
+  //0) generate token
+  //1)interpolate in the string to make the link
+  //2)store reset link in mongo with validity(true), user(req.user), token(token)
+  //3)send mail with reset link
+  //4)return to render a view which informs that mail has been sent with reset instructions
+  return res.redirect("back"); //TO BE CHANGED TO POINT 4'S VIEW
+};
+
+module.exports.resetPage = async function (req, res) {
+  let token = req.params.token;
+  let reset = await ResetPassword.findOne({ accessToken: token });
+  if (!reset) {
+    reset = null;
+  }
+  return res.render("change_pass", {
+    title: "Set your new password",
+    reset: reset,
+  });
+};
+
+module.exports.changePassword = async function (req, res) {
+  console.log("%%%%%%%", req.body);
+  if (req.body.password != req.body.confirmPassword) {
+    req.flash("error", "Passwords do not match!");
+    return res.redirect("back");
+  }
+  let reset = await ResetPassword.findOne({
+    accessToken: req.params.token,
+  }).populate("user");
+  if (!reset) {
+    req.flash("error", "No user found!");
+  } else {
+    if (reset.isvalid) {
+      const query = { email: reset.user.email };
+      // Set some fields in that document
+      const update = {
+        $set: {
+          password: req.body.password,
+        },
+      };
+
+      await User.findOneAndUpdate(query, update);
+      await ResetPassword.findOneAndUpdate(
+        { accessToken: req.params.token },
+        { isvalid: false }
+      );
+      req.flash("success", "Password updated successfully!");
+      return res.redirect("/");
+    } else {
+      req.flash("error", "Session Expired!");
+      return res.redirect("back");
+    }
+  }
 };

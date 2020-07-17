@@ -1,8 +1,12 @@
+$main-brand-royalblue: rgb(252, 245, 235);
+$dark-shade: #212040;
+$light-shade: #e9b000;
+$light-accent: #eb6e80;
+$dark-accent: #008f95;
+$warm-white: rgb(252, 245, 235);
 body {
-  background-image: url("../images/back-ground.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: "Roboto Mono", monospace;
+  background-color: rgb(252, 245, 235);
+  font-family: "Source Sans Pro", sans-serif;
   margin: 0em;
   #layout-main {
     * {
@@ -16,4 +20,12 @@ body {
     align-items: center;
   }
   /* text-align: center; */
+  .btn-outline-success:not(:disabled):not(.disabled):active {
+    background-color: $dark-accent;
+    border-color: transparent;
+  }
+  .btn-outline-success.focus,
+  .btn-outline-success:focus {
+    box-shadow: none;
+  }
 }

@@ -1,12 +1,72 @@
-<h1>sign-in</h1>
+<!-- <h1>sign-in</h1> -->
 
-<form action="/users/create-session" method="POST">
+<!-- <form action="/users/create-session" method="POST">
   <input type="email" name="email" placeholder="Email" required />
   <input type="password" name="password" placeholder="Password" required />
   <input type="submit" value="Sign In" />
 </form>
 
-
 <p>
   <a href="/users/auth/google">Sign-in/Sign-up using Google</a>
-</p>
+</p> -->
+
+<link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/css/sign_up_page.css" />
+<link rel="stylesheet" href="/css/sign_in_page.css" />
+
+<div class="mycontainer">
+  <div class="signup-form">
+    <form action="/users/create-session" method="post">
+      <h2>Sign in</h2>
+      <p class="hint-text">Sign in with your Google Account</p>
+      <div class="social-btn text-center">
+        <a href="/users/auth/google" class="btn btn-danger btn-lg"
+          ><i class="fa fa-google"></i> Google</a
+        >
+      </div>
+      <div class="or-seperator"><b>or</b></div>
+
+      <div class="form-group">
+        <input
+          type="email"
+          class="form-control input-lg"
+          name="email"
+          placeholder="Email Address"
+          required="required"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="password"
+          class="form-control input-lg"
+          name="password"
+          placeholder="Password"
+          required="required"
+        />
+      </div>
+
+      <div class="form-group">
+        <button
+          type="submit"
+          class="btn btn-success btn-lg btn-block signup-btn"
+        >
+          Sign In
+        </button>
+      </div>
+      <a href="/users/reset-password"
+        ><div class="text-center">Forgot password?</div></a
+      >
+    </form>
+    <div class="text-center">
+      New to Codeial? &nbsp;<a href="/users/sign-up">Sign up here!</a>
+    </div>
+  </div>
+  <div class="sitting-image">
+    <img src="/images/laptop_sitting.svg" />
+  </div>
+</div>

@@ -1,8 +1,6 @@
 body {
-  background-image: url("../images/back-ground.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: "Roboto Mono", monospace;
+  background-color: #fcf5eb;
+  font-family: "Source Sans Pro", sans-serif;
   margin: 0em;
   /* text-align: center; */ }
   body #layout-main {
@@ -13,3 +11,9 @@ body {
     align-items: center; }
     body #layout-main * {
       box-sizing: border-box; }
+  body .btn-outline-success:not(:disabled):not(.disabled):active {
+    background-color: #008f95;
+    border-color: transparent; }
+  body .btn-outline-success.focus,
+  body .btn-outline-success:focus {
+    box-shadow: none; }

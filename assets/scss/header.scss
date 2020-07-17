@@ -1,60 +1,26 @@
-$main-brand-royalblue: #207ce9;
-$dark-shade: #212040;
-$light-shade: #f9f8f9;
-$light-accent: #5ac780;
-$dark-accent: #938289;
-// nav {
-//   color: $light-shade;
-//   font-size: 1.6rem;
-//   line-height: 4rem;
-//   display: flex;
-//   flex-direction: row;
-//   text-transform: capitalize;
+$main-brand-white: #fff;
+$dark-shade: #e24e42;
+$light-shade: #e9b000;
+$light-accent: #eb6e80;
+$dark-accent: #008f95;
+$hover-mustard: #e4b528;
+$hover-aqua: #26a4a9;
+$warm-white: rgb(252, 245, 235);
 
-//   height: 4rem;
-//   justify-content: space-between;
-//   background-color: $dark-shade;
-//   #logo-header {
-//     a {
-//       height: 4rem;
-//       width: 4rem;
-//       padding-left: 20px;
-//       padding-right: 20px;
-//       &:hover {
-//         background-color: #2a285e;
-//       }
-//       img {
-//         height: 100%;
-//         width: 100%;
-//       }
-//     }
-//   }
-//   ul {
-//     margin: 0;
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-//     list-style: none;
-//     li {
-//       width: 150px;
-//       text-align: center;
-//       padding-left: 20px;
-//       padding-right: 20px;
-//       &:hover {
-//         background-color: #2a285e;
-//       }
-//     }
-//     a {
-//       margin: 0 10px;
-//       color: $light-shade;
-//       text-decoration: none;
-//     }
-//   }
-// }
 .navbar {
-  background-color: $dark-shade;
+  z-index: 1;
+  position: sticky;
+  top: 0px;
+  margin-top: -2px;
+  background-color: transparent;
+  transition: 500ms ease;
+  line-height: 100%;
+  height: 60px;
   .navbar-toggler-icon {
     color: white;
+  }
+  .btn {
+    font-size: 1.2em;
   }
   #profile-pic-header {
     height: 28px;
@@ -71,6 +37,38 @@ $dark-accent: #938289;
       background-color: #2a285e;
     }
   }
+  .btn-outline-success {
+    border-radius: 2px;
+    color: $dark-accent;
+    border-color: transparent;
+    &:hover {
+      color: white;
+      background-color: $dark-accent;
+      border-color: $dark-accent;
+    }
+  }
+
+  //website logo
+  .navbar-brand {
+    transition: 0.3s all ease-in-out;
+    &:hover {
+      font-family: "Archivo Black", sans-serif;
+      font-size: 2.5em;
+      color: $light-shade;
+      #dot {
+        color: $dark-accent;
+      }
+    }
+    font-family: "Archivo Black", sans-serif;
+    font-size: 2.5em;
+    color: $dark-accent;
+    #dot {
+      transition: 500ms ease;
+
+      color: $light-shade;
+    }
+  }
+
   a {
     .btn-link {
       &:hover {
@@ -82,5 +80,29 @@ $dark-accent: #938289;
   }
   button {
     margin: 0 20px;
+  }
+}
+.scrolled {
+  background-color: #00686c;
+  .btn-outline-success {
+    background-color: white;
+    color: $dark-accent;
+    border-color: transparent;
+    &:hover {
+      background-color: $hover-mustard;
+    }
+  }
+  .navbar-brand {
+    color: white;
+    #dot {
+      color: white;
+    }
+    &:hover {
+      opacity: 1;
+      color: $light-shade;
+      #dot {
+        color: $light-shade;
+      }
+    }
   }
 }

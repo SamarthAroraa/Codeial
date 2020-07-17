@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+@keyframes animated-text {
+  from {
+    width: 0; }
+  to {
+    width: 472px; } }
+
+@keyframes animated-cursor {
+  from {
+    border-right-color: #e9b000; }
+  to {
+    border-right-color: transparent; } }
+
+.container {
+  font-family: "Source Sans Pro", sans-serif;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  margin: 1em 10px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+  .container .signin {
+    height: 50px; }
+    .container .signin .btn-info {
+      padding-left: 2.5em;
+      padding-right: 2.5em;
+      background-color: #008f95;
+      border-color: #008f95;
+      margin-top: 60px;
+      border-radius: 100px;
+      letter-spacing: 0.05em;
+      word-spacing: 0.3em;
+      font-size: 1.3em;
+      font-weight: 600;
+      width: 100%;
+      height: 100%; }
+      .container .signin .btn-info:hover {
+        background-color: #e9b000;
+        border-color: #e9b000; }
+  .container .title {
+    margin-right: -40px;
+    position: relative; }
+    .container .title h1 {
+      line-height: 100%;
+      border-right: solid 4px #e9b000;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: animated-text 1.5s steps(15, end) 1s 0.99 normal both, animated-cursor 600ms steps(29, end) infinite;
+      color: #008f95;
+      font-size: 5em;
+      font-family: "Archivo Black", sans-serif; }
+      .container .title h1 #dot {
+        color: #e9b000; }
+  .container .main-image {
+    position: relative;
+    height: 67%;
+    width: 67%; }
+    .container .main-image img {
+      height: 100%;
+      width: 100%; }
+  .container .caption-text {
+    position: relative;
+    top: 10px;
+    letter-spacing: 0.05em;
+    word-spacing: 0.3em;
+    font-size: 2em;
+    font-weight: 600; }
+    .container .caption-text #code {
+      color: #008f95; }
