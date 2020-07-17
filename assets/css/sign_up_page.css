@@ -4,6 +4,14 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
+  .mycontainer input[type="email"] {
+    letter-spacing: 2px; }
+  .mycontainer input[type="password"] {
+    letter-spacing: 5px; }
+  .mycontainer input {
+    padding-left: 20px; }
+    .mycontainer input::placeholder {
+      letter-spacing: 2px; }
   .mycontainer .signup-form {
     font-family: "Source Sans Pro", sans-serif; }
   .mycontainer .form-control {

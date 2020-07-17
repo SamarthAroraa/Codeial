@@ -2,6 +2,10 @@ const User = require("../models/user");
 const Post = require("../models/post");
 const fs = require("fs");
 const path = require("path");
+const queue = require("../config/kue");
+const resetWorker = require("../workers/reset-password_worker");
+const ResetPassword = require("../models/reset-password");
+const randomString = require("randomstring");
 
 module.exports.profile = async function (req, res) {
   try {
@@ -53,7 +57,7 @@ module.exports.create = async function (req, res) {
       let user = await User.create(req.body);
       return res.redirect("/users/sign-in");
     } else {
-      flash.error("error", "User with this email id already exists");
+      req.flash("error", "User with this email id already exists");
       return res.redirect("back");
     }
   } catch (err) {
@@ -122,7 +126,30 @@ module.exports.resetPassword = function (req, res) {
   });
 };
 
-module.exports.sendResetLink = function (req, res) {
+module.exports.sendResetLink = async function (req, res) {
+  let user = await User.findOne({ email: req.body.email });
+  if (!user) {
+    req.flash("error", "No users found.");
+    return res.redirect("back");
+  } else {
+    let reset = await ResetPassword.create({
+      user: user,
+      isvalid: true,
+      accessToken: randomString.generate(),
+    });
+    // console.log(reset, "**************************");
+    let job = queue
+      .create("ResetEmail", reset)
+      .priority("high")
+      .save(function (err) {
+        if (err) {
+          console.log("error in sending job to queue", err);
+          return;
+        }
+      });
+    console.log(job.id);
+    req.flash("success", `Reset password link mailed to ${req.body.email}`);
+  }
   //check if user exists in DB- if yes, flash message the reset email sent and carry on with the listed steps. If does not exist then flash "No users found" and return back
   //0) generate token
   //1)interpolate in the string to make the link

@@ -19,7 +19,7 @@ module.exports.create = async function (req, res) {
         console.log("error in sending job to queue",err);
         return;
       }
-      console.log('job created',job.id);
+      // console.log('job created',job.id);
     });
     // commentsMailer.newComment(comment);
     if (req.xhr) {
