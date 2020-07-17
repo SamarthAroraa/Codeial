@@ -158,3 +158,50 @@ module.exports.sendResetLink = async function (req, res) {
   //4)return to render a view which informs that mail has been sent with reset instructions
   return res.redirect("back"); //TO BE CHANGED TO POINT 4'S VIEW
 };
+
+module.exports.resetPage = async function (req, res) {
+  let token = req.params.token;
+  let reset = await ResetPassword.findOne({ accessToken: token });
+  if (!reset) {
+    reset = null;
+  }
+  return res.render("change_pass", {
+    title: "Set your new password",
+    reset: reset,
+  });
+};
+
+module.exports.changePassword = async function (req, res) {
+  console.log("%%%%%%%", req.body);
+  if (req.body.password != req.body.confirmPassword) {
+    req.flash("error", "Passwords do not match!");
+    return res.redirect("back");
+  }
+  let reset = await ResetPassword.findOne({
+    accessToken: req.params.token,
+  }).populate("user");
+  if (!reset) {
+    req.flash("error", "No user found!");
+  } else {
+    if (reset.isvalid) {
+      const query = { email: reset.user.email };
+      // Set some fields in that document
+      const update = {
+        $set: {
+          password: req.body.password,
+        },
+      };
+
+      await User.findOneAndUpdate(query, update);
+      await ResetPassword.findOneAndUpdate(
+        { accessToken: req.params.token },
+        { isvalid: false }
+      );
+      req.flash("success", "Password updated successfully!");
+      return res.redirect("/");
+    } else {
+      req.flash("error", "Session Expired!");
+      return res.redirect("back");
+    }
+  }
+};
