@@ -7,5 +7,6 @@ router.use("/users", require("./users"));
 router.use("/posts", require("./posts.routes"));
 router.use("/comments", require("./comments.routes"));
 router.use("/api", require("./api"));
-
+router.use("/likes",require("./likes"));
+router.use("/friends",require("./friendships"));
 module.exports = router;

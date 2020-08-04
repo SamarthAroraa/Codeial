@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+
 //////////////////////////////////////
 //          Post Schema             //
 //////////////////////////////////////
@@ -20,6 +21,12 @@ const postSchema = new mongoose.Schema(
         ref: "Comment", //check
       },
     ],
+    likes: [
+      {
+        type:mongoose.Schema.Types.ObjectId,
+        ref:"Like"
+      }
+    ] 
   },
   {
     timestamps: true,

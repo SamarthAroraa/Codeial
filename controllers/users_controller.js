@@ -6,13 +6,20 @@ const queue = require("../config/kue");
 const resetWorker = require("../workers/reset-password_worker");
 const ResetPassword = require("../models/reset-password");
 const randomString = require("randomstring");
-
+const Friendship = require("../models/friendships");
 module.exports.profile = async function (req, res) {
   try {
     let user = await User.findById(req.params.id);
+    let friendship = await Friendship.findOne({
+      sender: req.user.id,
+      reciever: user.id,
+    });
+
     return res.render("user_profile", {
       title: `${user.name}`,
       profile_user: user,
+      is_friend: friendship ? 1 : 0,
+      self: req.user,
     });
   } catch (err) {
     console.log(err);
@@ -70,8 +77,13 @@ module.exports.create = async function (req, res) {
 
 //sign in and create a session for he user
 module.exports.createSession = function (req, res) {
-  req.flash("success", "Logged in succesfully!");
-  return res.redirect("/");
+  if (req.isAuthenticated()) {
+    req.flash("success", "Logged in succesfully!");
+    return res.redirect("/");
+  } else {
+    req.flash("error", "invalid username/password");
+    return res.redirect("/users/sign-in");
+  }
 };
 
 //sign out
@@ -83,6 +95,17 @@ module.exports.signOut = function (req, res) {
   return res.redirect("/");
 };
 
+module.exports.updatePage = (req, res) => {
+  if (req.params.id != req.user.id) {
+    return res.render("ErrorPages/_access_forbidden", {
+      title: "403 ACCESS FORBIDDEN!",
+    });
+  }
+  return res.render("_user_profile_update", {
+    title: "Profile Update",
+    user: req.user,
+  });
+};
 module.exports.update = async (req, res) => {
   if (req.user.id == req.params.id) {
     try {
@@ -92,6 +115,7 @@ module.exports.update = async (req, res) => {
 
         if (err) {
           console.log("***********Multer error!");
+          req.flash("error", "An unexpected error occurred");
           return res.redirect("back");
         }
         user.name = req.body.name;
@@ -108,6 +132,7 @@ module.exports.update = async (req, res) => {
         }
         user.save();
       });
+      req.flash("success", "Profile Updated");
       return res.redirect("back");
     } catch (err) {
       console.log("error in uploading!", err);

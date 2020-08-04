@@ -13,7 +13,7 @@ module.exports.create = async function (req, res) {
     });
     post.comments.unshift(comment);
     post.save();
-    comment = await comment.populate("user", "name email").execPopulate();
+    comment = await comment.populate("user", "name email avatar").execPopulate();
     let job = queue.create("Email", comment).save(function (err) {
       if (err) {
         console.log("error in sending job to queue",err);

@@ -1,12 +1,33 @@
-<li id="comment-<%= comment._id%>">
-  <p>
+<div class="social-comment" id="comment-<%= comment._id %>">
+  <a href="/users/profile/<%= comment.user._id %>" class="pull-left">
+    <% if(comment.user.avatar) { %>
+
+    <img alt="image" src="<%= comment.user.avatar %>" />
+    <% } else{%>
+    <img alt="image" src="https://bootdey.com/img/Content/avatar/avatar1.png" />
+    <% } %>
+  </a>
+  <div class="media-body">
+    <a href="/users/profile/<%= comment.user._id %>">
+      <%= comment.user.name %>
+    </a>
     <%= comment.content %>
     <br />
-    <small><%= comment.user.name %></small>
-  </p>
-  <%if((locals.user) && (locals.user.id== comment.user.id)){%>
-  <a class="delete-comment-button" href="/comments/destroy/<%= comment.id %>"
-    >X</a
-  >
-  <% } %>
-</li>
+    <a
+      class="toggle-like-button small"
+      like-count="<%= comment.likes.length %>"
+      href="/likes/toggle/?id=<%=comment._id%>&type=Comment"
+      ><i class="fa fa-thumbs-up"></i> <%=comment.likes.length %> Likes</a
+    >
+
+    <small class="text-muted"
+      ><% if (locals.user && locals.user.id == comment.user._id){ %> -
+      <a
+        class="delete-comment-button"
+        href="/comments/destroy/<%= comment.id %>"
+        >Delete</a
+      >
+      <% } %></small
+    >
+  </div>
+</div>

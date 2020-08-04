@@ -1,0 +1,69 @@
+<link
+  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="/css/_user_profile_update.styles.css" />
+
+<div class="container bootstrap snippets">
+  <div class="row">
+    <div class="col-xs-12 col-sm-9 center">
+      <form class="form-horizontal"
+      method="POST"
+      action="/users/update/<%= user.id %> "
+      enctype="multipart/form-data">
+        <div class="panel panel-default">
+          <div class="panel-body text-center">
+            <% if(!user.avatar) { %>
+            <img
+              src="https://bootdey.com/img/Content/avatar/avatar6.png"
+              class="img-circle profile-avatar"
+              alt="User avatar"
+            />
+            <% } else{%>
+            <img
+              src="<%= user.avatar %>"
+              class="img-circle profile-avatar"
+              alt="User avatar"
+            />
+            <% } %>
+            <div class="edit"><a href="#"><i class="fa fa-pencil fa-lg"></i></a>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Edit Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            aria-describedby="emailHelp"
+            value="<%=user.email%>"
+          />
+        </div>
+        <div class="form-group">
+          <label for="name">Edit Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            value="<%= user.name %>"
+          />
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="profile-pic-input">Edit profile Pic</label>
+            <div class="custom-file">
+             
+              <input type="file" class="form-control-file" 
+              name="avatar" class="custom-file-input" id="profile-pic-input"
+              id="profile-pic-input">
+              
+            </div>
+          </div>
+
+        <button type="submit" class="btn btn-info center mt-4">Update</button>
+      </form>
+    </div>
+  </div>
+</div>

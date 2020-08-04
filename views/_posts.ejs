@@ -1,34 +1,81 @@
-<li id="post-<%=i._id %>">
-  <p><%= i.content %> <br /><small><%= i.user.name %></small></p>
-  <% if(locals.user && i.user.id == locals.user.id) { %>
-  <small>
-    <a class="delete-post-button" href="/posts/destroy/<%= i._id %>">Delete</a>
-  </small>
-  <% } %>
+<link
+  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+  rel="stylesheet"
+/>
 
-  <div class="post-container">
-    <% if(locals.user){ %>
-    <form
-      action="/comments/create"
-      method="POST"
-      id="post-<%= i._id %>-comments-form"
-      class="comment-form"
-    >
-      <input
-        type="text"
-        name="content"
-        placeholder="Add a comment..."
-        required
+<div class="social-feed-box" id="post-<%=i._id %>">
+  <div class="social-avatar">
+    <% if(i.user.avatar){ %>
+    <a href="" class="pull-left">
+      <img alt="image" src="<%=i.user.avatar %>" />
+    </a>
+    <% } else{%>
+    <a href="" class="pull-left">
+      <img
+        alt="image"
+        src="https://bootdey.com/img/Content/avatar/avatar1.png"
       />
-      <input type="hidden" name="post" value="<%= i._id %>" />
-      <input type="submit" value="Comment" />
-    </form>
-    <% } %>
+    </a>
+    <%}%>
 
-    <div>
-      <ul id="post-comment-container-<%= i._id %>">
-        <% for( comment of i.comments) { %> <%- include('_comments') -%> <%} %>
-      </ul>
+    <div class="media-body">
+      <a href="/users/profile/<%=i.user._id %>">
+        <%=i.user.name %>
+      </a>
+      <% let arr = String(i.createdAt).split(" "); %> <% let
+      time=arr[4].split(":") %>
+      <small class="text-muted">
+        <%= time[0]%>:<%= time[1]%>, <%=arr[0]%>, <%=arr[1]%>, <%=arr[2]%>,
+        <%=arr[3]%>
+      </small>
     </div>
   </div>
-</li>
+  <div class="social-body">
+    <p>
+      <%= i.content %>
+    </p>
+
+    <div class="btn-group">
+      <button class="btn btn-white btn-xs">
+        <a
+          class="toggle-like-button"
+          href="/likes/toggle?id=<%=i._id%>&type=Post"
+          like-count="<%=i.likes.length%>"
+        >
+          <i class="fa fa-thumbs-up"></i> &nbsp; <%= i.likes.length %> Likes
+        </a>
+      </button>
+      <% if(locals.user && i.user.id == locals.user.id) { %>
+      <button class="btn btn-white btn-xs">
+        <a class="delete-post-button" href="/posts/destroy/<%= i._id %>"
+          ><i class="fa fa-trash"></i
+        ></a>
+      </button>
+      <% } %>
+    </div>
+  </div>
+
+  <div class="social-footer" id="post-comment-container-<%= i._id %>">
+    <% for( comment of i.comments) { %> <%- include('_comments') -%> <%} %>
+    <div class="social-comment comment-form">
+      <div class="media-body">
+        <form
+          action="/comments/create"
+          method="POST"
+          id="post-<%=i._id %>-comments-form"
+          class="comment-form"
+        >
+          <input
+            type="text"
+            class="form-control"
+            name="content"
+            placeholder="Write comment..."
+            required
+          />
+          <input type="hidden" name="post" value="<%= i._id %>" />
+          <input type="submit" value="Comment" style="display: none;" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
