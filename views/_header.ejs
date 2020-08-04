@@ -25,51 +25,51 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto"></ul>
-    <!-- <form class="form-inline my-2 my-lg-0"> -->
-    <!-- <input
+  <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+  <ul class="navbar-nav mr-auto"></ul>
+  <!-- <form class="form-inline my-2 my-lg-0"> -->
+  <!-- <input
         class="form-control mr-sm-2"
         type="search"
         placeholder="Search"
         aria-label="Search"
       /> -->
-    <% if(locals.user){ %>
-    <!-- <li class="nav-item"> -->
-    <a href="/users/profile/<%=user.id%>">
-      <button class="btn btn-link my-2 my-sm-0">
-        <% if(user.avatar) { %>
-        <img
-          src="<%= user.avatar %>"
-          alt="<%= user.name %>"
-          id="profile-pic-header"
-        />
-        <% } %> <%= user.name %>
-      </button></a
-    >
-    <!-- </li> -->
+  <% if(locals.user){ %>
+  <!-- <li class="nav-item"> -->
+  <a href="/users/profile/<%=user.id%>">
+    <button class="btn btn-link my-2 my-sm-0">
+      <% if(user.avatar) { %>
+      <img
+        src="<%= user.avatar %>"
+        alt="<%= user.name %>"
+        id="profile-pic-header"
+      />
+      <% } %> <%= user.name %>
+    </button></a
+  >
+  <!-- </li> -->
 
-    <a href="/users/sign-out">
-      <button class="btn btn-outline-success my-2 my-sm-0">
-        Sign-out
-      </button></a
-    >
-    <% } else {%>
-    <a href="/users/sign-in">
-      <button class="btn btn-outline-success my-2 my-sm-0">
-        Sign-In
-      </button></a
-    >
-    <a href="/users/sign-up">
-      <button class="btn btn-outline-success my-2 my-sm-0">
-        Sign-up
-      </button></a
-    >
-    <% } %>
+  <a href="/users/sign-out">
+    <button class="btn btn-outline-success my-2 my-sm-0">
+      Sign-out
+    </button></a
+  >
+  <% } else {%>
+  <a href="/users/sign-in">
+    <button class="btn btn-outline-success my-2 my-sm-0">
+      Sign-In
+    </button></a
+  >
+  <a href="/users/sign-up">
+    <button class="btn btn-outline-success my-2 my-sm-0">
+      Sign-up
+    </button></a
+  >
+  <% } %>
 
-    <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+  <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
         Search
       </button> -->
-    <!-- </form> -->
-  </div>
+  <!-- </form> -->
+  <!-- </div> -->
 </nav>
