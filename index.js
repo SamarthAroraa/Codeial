@@ -1,10 +1,12 @@
 const express = require("express");
 const cookieParser = require("cookie-parser");
 const app = express();
-const port = 8000;
-const expressLayouts = require("express-ejs-layouts");
+const port = 3000;
+const expressLayouts = require("express-pind-layouts");
+const env = require("./config/environment");
 const db = require("./config/mongoose");
 const session = require("express-session");
+const logger = require("morgan");
 const passport = require("passport");
 const passportLocal = require("./config/passport-local-stratergy");
 const passportGoogle = require("./config/passport-google-oauth2-stratergy");
@@ -14,27 +16,32 @@ const sassMiddleware = require("node-sass-middleware");
 const flash = require("connect-flash");
 const customMware = require("./config/middleware");
 const chatServer = require("http").Server(app);
-const chatSockets = require("./config/chat_sockets").chatSockets(chatServer)
-chatServer.listen(80, function(err){
-  if(err){
+const chatSockets = require("./config/chat_sockets").chatSockets(chatServer);
+const path = require("path");
+app.use(logger(env.morgan.mode, env.morgan.options));
+
+chatServer.listen(80, function (err) {
+  if (err) {
     return;
   }
-  console.log('chat server running on port 80')
-
+  console.log("chat server running on port 80");
 });
 
-app.use(
-  sassMiddleware({
-    src: "./assets/scss",
-    dest: "./assets/css",
-    debug: true,
-    outputStyle: "extended",
-    prefix: "/css",
-  })
-);
+if (env.name == "development") {
+  app.use(
+    sassMiddleware({
+      src: path.join(__dirname, env.asset_path, "scss"),
+      dest: path.join(__dirname, env.asset_path, "css"),
+      debug: true,
+      outputStyle: "extended",
+      prefix: "/css",
+    })
+  );
+}
+
 app.use(express.urlencoded());
 app.use(cookieParser());
-app.use(express.static("./assets"));
+app.use(express.static(env.asset_path));
 //make the upload path available to the browser
 app.use("/uploads", express.static(__dirname + "/uploads"));
 app.use(expressLayouts);
@@ -46,7 +53,7 @@ app.use(
   session({
     name: "codial",
     //TO DO change secret before deployment
-    secret: "asifhajosicrh89w34u9rjixp3purhw3oir",
+    secret: env.session_cookie_key,
     saveUninitialized: false,
     require: false,
     cookie: {

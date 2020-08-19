@@ -5,9 +5,6 @@ var messages = $(".messages-content"),
   i = 0;
 $(window).on("load", function () {
   messages.mCustomScrollbar();
-  setTimeout(function () {
-    fakeMessage();
-  }, 100);
 });
 
 function updateScrollbar() {
@@ -34,6 +31,7 @@ function setDate() {
 
 function insertMessage() {
   msg = $(".message-input").val();
+
   if ($.trim(msg) == "") {
     return false;
   }
@@ -42,11 +40,7 @@ function insertMessage() {
     .addClass("new");
   console.log("entering");
   setDate();
-  $(".message-input").val(null);
   updateScrollbar();
-  setTimeout(function () {
-    fakeMessage();
-  }, 1000 + Math.random() * 20 * 100);
 }
 
 $(".message-submit").click(function () {
@@ -56,6 +50,10 @@ $(".message-submit").click(function () {
 $("#chat-form").submit(function (e) {
   e.preventDefault();
   insertMessage();
+  $(".messages-content").animate(
+    { scrollTop: $(".messages-content")[0].scrollHeight + 50 },
+    500
+  );
 });
 
 // $(window).on("keydown", function (e) {
@@ -83,7 +81,7 @@ var Fake = [
   ":)",
 ];
 
-function fakeMessage() {
+function replyMessage(message, profile_pic, id) {
   if ($(".message-input").val() != "") {
     return false;
   }
@@ -95,19 +93,33 @@ function fakeMessage() {
   setTimeout(function () {
     $(".message.loading").remove();
     $(
-      '<div class="message new"><figure class="avatar"><img src="http://askavenue.com/img/17.jpg" /></figure>' +
-        Fake[i] +
+      '<div class="message new"><figure class="avatar"><a href="/users/profile/' +
+        id +
+        '" ><img src="' +
+        profile_pic +
+        '" /></a></figure>' +
+        message +
         "</div>"
     )
       .appendTo($(".mCSB_container"))
       .addClass("new");
     setDate();
     updateScrollbar();
+    $(".messages-content").animate(
+      { scrollTop: $(".messages-content")[0].scrollHeight + 50 },
+      500
+    );
     i++;
-  }, 1000 + Math.random() * 20 * 100);
+  }, 1);
 }
 
 $(".button").click(function () {
   $(".menu .items span").toggleClass("active");
   $(".menu .button").toggleClass("active");
+});
+
+//cross chatbox
+$(".chatbox-cross").click(function (e) {
+  console.log("click");
+  $(".avenue-messenger").css("display", "none");
 });

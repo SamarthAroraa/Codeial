@@ -128,7 +128,7 @@ class PostComments {
       : $(`
     <div class="social-comment" id="comment-${comment._id}">
   <a href="/users/profile/${comment.user._id}" class="pull-left">
-    <img alt="image" src="https://bootdey.com/img/Content/avatar/avatar1.png" />
+    <img alt="image" src="https://icon-library.com/images/no-profile-pic-icon/no-profile-pic-icon-11.jpg" />
   </a>
   <div class="media-body">
     <a href="/users/profile/${comment.user._id}">
@@ -217,7 +217,7 @@ class PostComments {
   let newPostDOM = function (post) {
     let profile_pic = post.user.avatar
       ? `${post.user.avatar}`
-      : "https://bootdey.com/img/Content/avatar/avatar1.png";
+      : "https://icon-library.com/images/no-profile-pic-icon/no-profile-pic-icon-11.jpg";
 
     return $(`<div class="social-feed-box" id="post-${post._id}">
     <div class="social-avatar">

@@ -11,6 +11,8 @@ body {
     align-items: center; }
     body #layout-main * {
       box-sizing: border-box; }
+    body #layout-main a {
+      text-decoration: none; }
   body .btn-outline-success:not(:disabled):not(.disabled):active {
     background-color: #008f95;
     border-color: transparent; }

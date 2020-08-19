@@ -1,4 +1,5 @@
 const passport = require("passport");
+const env = require("./environment");
 const JWTstrategy = require("passport-jwt").Strategy;
 const ExtractJWT = require("passport-jwt").ExtractJwt;
 
@@ -6,7 +7,7 @@ const User = require("../models/user");
 
 const opts = {
   jwtFromRequest: ExtractJWT.fromAuthHeaderAsBearerToken(),
-  secretOrKey: "rsj091203sgj",
+  secretOrKey: env.jwt_secret_key,
 };
 
 passport.use(
@@ -26,5 +27,3 @@ passport.use(
 );
 
 module.exports = passport;
-
-

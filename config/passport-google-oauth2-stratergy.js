@@ -1,4 +1,5 @@
 const passport = require("passport");
+const env = require("./environment");
 const googleStrategy = require("passport-google-oauth").OAuth2Strategy;
 const User = require("../models/user");
 const crypto = require("crypto");
@@ -10,9 +11,9 @@ const GOOGLE_CLIENT_SECRET = "Qu6YEGlmfd99MViiB9dZcHuV";
 passport.use(
   new googleStrategy(
     {
-      clientID: GOOGLE_CLIENT_ID,
-      clientSecret: GOOGLE_CLIENT_SECRET,
-      callbackURL: "http://localhost:8000/users/auth/google/callback",
+      clientID: env.google_client_id,
+      clientSecret: env.google_client_secret,
+      callbackURL: env.google_callback_auth,
     },
     function (accessToken, refreshToken, profile, cb) {
       //find if user already exists

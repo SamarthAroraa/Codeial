@@ -14,12 +14,22 @@ module.exports.profile = async function (req, res) {
       sender: req.user.id,
       reciever: user.id,
     });
-
+    let crossFriendship = await Friendship.findOne({
+      sender: user.id,
+      reciever: req.user.id,
+    });
+    let friends = await Friendship.find({
+      $or: [{ sender: req.params.id }, { reciever: req.params.id }],
+    })
+      .populate("sender")
+      .populate("reciever");
+    console.log(friends, "^^^^^^^");
     return res.render("user_profile", {
       title: `${user.name}`,
       profile_user: user,
-      is_friend: friendship ? 1 : 0,
+      is_friend: friendship || crossFriendship ? 1 : 0,
       self: req.user,
+      friends: friends,
     });
   } catch (err) {
     console.log(err);

@@ -4,8 +4,7 @@ const Friendship = require("../models/friendships");
 module.exports.add = async function (req, res) {
   let reciever = await User.findById(req.params.id);
   let sender = await User.findById(req.user.id);
-  console.log("rrrrrr", req.params.id);
-  console.log("ssssss", sender);
+  
   if (!reciever) {
     req.flash("error", "User not found!");
     return res.json(404, {
@@ -17,7 +16,12 @@ module.exports.add = async function (req, res) {
     sender: sender,
     reciever: reciever,
   });
-  if (existing) {
+  let crossExisting = await Friendship.findOne({
+    sender: reciever,
+    reciever: sender,
+  });
+
+  if (existing || crossExisting) {
     req.flash("success", `${reciever.name} is already a friend!`);
     return res.json(200, {
       message: "Already added",
@@ -33,9 +37,9 @@ module.exports.add = async function (req, res) {
     });
 
     //add to sender and reciever's friendslist
-    reciever.friends.push(sender);
+    reciever.friends.push(friendship);
     reciever.save();
-    sender.friends.push(reciever);
+    sender.friends.push(friendship);
     sender.save();
     req.flash("success", `${reciever.name} is now a friend!`);
     return res.json(200, {
@@ -61,7 +65,12 @@ module.exports.remove = async function (req, res) {
     sender: sender,
     reciever: reciever,
   });
-  if (!existing) {
+  let crossExisting = await Friendship.findOne({
+    sender: reciever,
+    reciever: sender,
+  });
+  
+  if (!existing && !crossExisting) {
     req.flash("success", `${reciever.name} is not in your friendlist`);
     return res.json(200, {
       message: "Already removed",
@@ -75,10 +84,14 @@ module.exports.remove = async function (req, res) {
       sender: existing.sender,
       reciever: existing.reciever,
     });
+    await Friendship.findOneAndRemove({
+      sender: existing.reciever,
+      reciever: existing.sender,
+    });
 
     //remove from sender's and reciever's friendslist
-    reciever.friends.pull(sender);
-    sender.friends.pull(sender);
+    reciever.friends.pull(existing);
+    sender.friends.pull(existing);
     reciever.save();
     sender.save();
     req.flash("success", `${reciever.name} removed from your friendlist`);
