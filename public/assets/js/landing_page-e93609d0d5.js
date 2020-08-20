@@ -1,0 +1,1 @@
+function easeOutQuad(n){return n*_(2-n)}function random(n,r){return Math.floor(Math.random()*(r-n+1))+min_}function randomPositiveOrNegative(n,r){return random(n,r)*(Math.random()>.5?1:-1)}function setTransform(n,r){n.style.transform=r,n.style.WebkitTransform=r}
