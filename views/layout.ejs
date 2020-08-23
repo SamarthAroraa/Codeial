@@ -41,9 +41,9 @@
       href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto&family=Source+Sans+Pro:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/layout.css" />
-    <link rel="stylesheet" href="/css/header.css" />
-    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="<%= assetPath('css/layout.css')%>" />
+    <link rel="stylesheet" href="<%= assetPath('css/header.css') %>" />
+    <link rel="stylesheet" href="<%= assetPath('css/footer.css') %>" />
 
     <%- style %>
   </head>
@@ -74,7 +74,7 @@
         }).show();
       // <%}%>
     </script>
-    <script src="/js/header.js"></script>
+    <script src="<%= assetPath('js/header.js') %>"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js"></script>
   </body>
 </html>

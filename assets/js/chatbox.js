@@ -41,15 +41,18 @@ function insertMessage() {
   console.log("entering");
   setDate();
   updateScrollbar();
+  $(".message-input").val("");
 }
 
-$(".message-submit").click(function () {
-  insertMessage();
-});
+// $(".message-submit").click(function () {
+//   insertMessage();
+
+// });
 
 $("#chat-form").submit(function (e) {
   e.preventDefault();
   insertMessage();
+  console.log("insering");
   $(".messages-content").animate(
     { scrollTop: $(".messages-content")[0].scrollHeight + 50 },
     500
@@ -62,24 +65,6 @@ $("#chat-form").submit(function (e) {
 //     return false;
 //   }
 // });
-
-var Fake = [
-  "Hi there, I'm Jesse and you?",
-  "Nice to meet you",
-  "How are you?",
-  "Not too bad, thanks",
-  "What do you do?",
-  "That's awesome",
-  "Codepen is a nice place to stay",
-  "I think you're a nice person",
-  "Why do you think that?",
-  "Can you explain?",
-  "Anyway I've gotta go now",
-  "It was a pleasure chat with you",
-  "Time to make a new codepen",
-  "Bye",
-  ":)",
-];
 
 function replyMessage(message, profile_pic, id) {
   if ($(".message-input").val() != "") {

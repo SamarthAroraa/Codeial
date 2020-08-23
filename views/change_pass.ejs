@@ -2,7 +2,7 @@
   rel="stylesheet"
   href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
 />
-<link rel="stylesheet" href="/css/change_pass.css" />
+<link rel="stylesheet" href="<%= assetPath('css/change_pass.css')%>" />
 <script type="text/javascript">
   function preventBack() {
     window.history.forward();
@@ -18,10 +18,14 @@
 </div> -->
 <% if(!reset){ %>
 <H1>Invalid Link!</H1>
-<img id="invalid-img" src="/images/void.svg" alt="Invalid link" />
+<img
+  id="invalid-img"
+  src="<%= assetPath('images/void.svg')%>"
+  alt="Invalid link"
+/>
 <% } else if(!reset.isvalid){ %>
 <h1>Session Expired!</h1>
-<img id="session-img" src="/images/time_expired.svg" />
+<img id="session-img" src="<%= assetPath('images/time_expired.svg')%>" />
 <% } else { %>
 <div class="content-wrapper">
   <div class="container">
@@ -111,4 +115,4 @@
   </div>
 </div>
 <% } %>
-<script src="/js/change_pass.js"></script>
+<script src="<%= assetPath('js/change_pass.js') %>"></script>

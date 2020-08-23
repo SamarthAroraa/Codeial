@@ -7,7 +7,7 @@
     null;
   };
 </script>
-<link rel="stylesheet" href="/css/home.css" />
+<link rel="stylesheet" href="<%= assetPath('css/home.css') %>" />
 <link
   href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
   rel="stylesheet"
@@ -45,9 +45,9 @@
 
 <%- include('_chatbox') -%>
 
-<script src="/js/home-post.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script>
-<script src="/js/chat_engine.js"></script>
+<script src="<%= assetPath('js/home-post.js') %>"></script>
+<script src="<%= assetPath('https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js')%>"></script>
+<script src="<%= assetPath('js/chat_engine.js') %>"></script>
 
 <script>
   new chatEngine("user-chat-box", "<%= locals.user.email %>");
