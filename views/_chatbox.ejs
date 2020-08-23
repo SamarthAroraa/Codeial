@@ -1,7 +1,7 @@
 <!--
 Inspired by https://dribbble.com/supahfunk
 -->
-<link rel="stylesheet" href="/css/chatbox.css">
+<link rel="stylesheet" href="<%= assetPath('css/chatbox.css') %>">
 <section class="avenue-messenger" >
     <div class="menu">
      <div class="items"><span>
@@ -16,7 +16,7 @@ Inspired by https://dribbble.com/supahfunk
     </div>
     <div class="agent-face">
       <div class="half">
-       <img class="agent circle" src="/images/Logo.png" alt="Group Chat"></div>
+       <img class="agent circle" src="<%= assetPath('images/Logo.png') %>" alt="Group Chat"></div>
     </div>
   <div class="chat">
     <div class="chat-title">
@@ -37,7 +37,7 @@ Inspired by https://dribbble.com/supahfunk
   </div>
     </div>
 
-<script src="/js/chatbox.js"></script>
-<script src="/js/chat_engine.js"></script>
+<script src="<%= assetPath('js/chatbox.js') %>"></script>
+<script src="<%= assetPath('js/chat_engine.js') %>"></script>
 
 <!--<div class="bg"></div>-->

@@ -3,6 +3,8 @@ const sass = require("gulp-sass");
 const cleanCSS = require("gulp-clean-css");
 const rev = require("gulp-rev");
 const uglify = require("gulp-uglify-es").default;
+const fs = require("fs");
+const path = require("path");
 const imagemin = require("gulp-imagemin");
 const pipeline = require("readable-stream").pipeline;
 const del = require("del");
@@ -14,51 +16,46 @@ gulp.task("css", function (done) {
     .pipe(sass())
     .pipe(cleanCSS())
     .pipe(gulp.dest("./assets.css"));
-
-  gulp
-    .src("./assets/**/*.css")
-    .pipe(cleanCSS())
-    .pipe(rev())
-    .pipe(gulp.dest("./public/assets"))
-    .pipe(
-      rev.manifest({
-        cwd: "public",
-        merge: true,
-      })
-    )
-    .pipe(gulp.dest("public/assets"));
-  done();
+  return pipeline(
+    gulp.src("./assets/**/*.css"),
+    cleanCSS(),
+    rev(),
+    gulp.dest("public/assets"),
+    rev.manifest({
+      base: "public/assets",
+      merge: true,
+    }),
+    gulp.dest("./public/assets")
+  );
 });
 
 gulp.task("js", function () {
   console.log("minifying js...");
   return pipeline(
-    gulp.src("assets/js/*.js"),
+    gulp.src("assets/**/*.js"),
     uglify(),
     rev(),
-    gulp.dest("public/assets/js"),
+    gulp.dest("public/assets"),
     rev.manifest({
-      cwd: "public",
+      base: "public/assets",
       merge: true,
     }),
-    gulp.dest("public/assets")
+    gulp.dest("./public/assets")
   );
 });
 
 gulp.task("images", function (done) {
-  gulp
-    .src("./assets/**/*.+(png|jpg|gif|svg|jpeg)")
-    .pipe(imagemin())
-    .pipe(rev())
-    .pipe(gulp.dest("./public/assets"))
-    .pipe(
-      rev.manifest({
-        cwd: "public",
-        merge: true,
-      })
-    )
-    .pipe(gulp.dest("public/assets"));
-  done();
+  return pipeline(
+    gulp.src("./assets/**/*.+(png|jpg|gif|svg|jpeg)"),
+    // imagemin(),
+    rev(),
+    gulp.dest("public/assets"),
+    rev.manifest({
+      base: "public/assets",
+      merge: true,
+    }),
+    gulp.dest("./public/assets")
+  );
 });
 
 gulp.task("clean:assets", function (done) {
@@ -69,9 +66,26 @@ gulp.task("clean:assets", function (done) {
   done();
 });
 
+gulp.task("move-manifest", function (done) {
+  fs.renameSync(
+    path.join(__dirname, "rev-manifest.json"),
+    path.join(__dirname, "./public/assets/rev-manifest.json"),
+    (err) => {
+      if (err) {
+        console.log(err);
+      }
+      console.log(
+        path.join(__dirname, "rev-manifest.json"),
+        path.join(__dirname, "public/assets/rev-manifest.json")
+      );
+      return;
+    }
+  );
+  done();
+});
 gulp.task(
   "build",
-  gulp.series("clean:assets", "css", "js", "images"),
+  gulp.series("clean:assets", "css", "js", "images", "move-manifest"),
   function (done) {
     done();
   }

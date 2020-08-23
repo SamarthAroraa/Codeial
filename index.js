@@ -1,8 +1,10 @@
 const express = require("express");
 const cookieParser = require("cookie-parser");
 const app = express();
+require("./config/view-helper")(app);
+
 const port = 3000;
-const expressLayouts = require("express-pind-layouts");
+const expressLayouts = require("express-ejs-layouts");
 const env = require("./config/environment");
 const db = require("./config/mongoose");
 const session = require("express-session");
@@ -18,6 +20,7 @@ const customMware = require("./config/middleware");
 const chatServer = require("http").Server(app);
 const chatSockets = require("./config/chat_sockets").chatSockets(chatServer);
 const path = require("path");
+
 app.use(logger(env.morgan.mode, env.morgan.options));
 
 chatServer.listen(80, function (err) {

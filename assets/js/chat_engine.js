@@ -34,6 +34,7 @@ class chatEngine {
     });
 
     self.socket.on("recieve_message", function (data) {
+      console.log(data.user_email, self.userEmail);
       if (data.user_email != self.userEmail) {
         let avatar = data.sender.avatar
           ? data.sender.avatar
