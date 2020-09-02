@@ -11,7 +11,7 @@
       method="POST"
       action="/users/update/<%= user.id %> "
       enctype="multipart/form-data">
-        <div class="panel panel-default">
+      <div class="panel panel-default">
           <div class="panel-body text-center">
             <% if(!user.avatar) { %>
             <img
@@ -60,6 +60,10 @@
               id="profile-pic-input">
               
             </div>
+          </div>
+          <div class="form-group">
+            <label for="about">Update About</label>
+            <textarea class="form-control" id="about" rows="3" name="about"><%= user.about %></textarea>
           </div>
 
         <button type="submit" class="btn btn-info center mt-4">Update</button>

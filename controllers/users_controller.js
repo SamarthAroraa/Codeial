@@ -30,7 +30,7 @@ module.exports.profile = async function (req, res) {
       is_friend: friendship || crossFriendship ? 1 : 0,
       self: req.user,
       friends: friends,
-    });
+  });
   } catch (err) {
     console.log(err);
     req.flash("error", "Unexpected error!");
@@ -130,6 +130,7 @@ module.exports.update = async (req, res) => {
         }
         user.name = req.body.name;
         user.email = req.body.email;
+        user.about=req.body.about;
 
         if (req.file) {
           if (user.avatar) {
