@@ -8,9 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>
-      <%= title %>
-    </title>
+    <title><%= title %></title>
     <meta name="description" content="" />
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
@@ -37,6 +35,27 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css"
     />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="<%=assetPath('images/apple-touch-icon.png')%>/"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="<%= assetPath('images/favicon-32x32.png')%>"
+    />
+
+    <link
+      rel="icon"
+      href="<%=assetPath('images/favicon.ico')%>"
+      type="image/x-icon"
+      sizes="16x16"
+    />
+    <link rel="manifest" href="<%=assetPath('images/site.webmanifest')%>" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto&family=Source+Sans+Pro:wght@400;600&display=swap"
       rel="stylesheet"
@@ -49,9 +68,7 @@
   </head>
   <body>
     <%- include('_header')%>
-    <main id="layout-main">
-      <%- body %>
-    </main>
+    <main id="layout-main"><%- body %></main>
     <%- include('_footer')%> <%- script %>
 
     <script>

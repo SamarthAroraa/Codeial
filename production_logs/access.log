@@ -1213,3 +1213,240 @@
 ::1 - - [26/Aug/2020:19:57:04 +0000] "GET /css/sign_up_page-4c3df472d7.css HTTP/1.1" 304 - "http://localhost:3000/users/sign-up" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36"
 ::1 - - [26/Aug/2020:19:57:04 +0000] "GET /js/header-a5cf671dc8.js HTTP/1.1" 304 - "http://localhost:3000/users/sign-up" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36"
 ::1 - - [26/Aug/2020:19:57:04 +0000] "GET /images/happy_community-293dc09d0b.svg HTTP/1.1" 304 - "http://localhost:3000/users/sign-up" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36"
+[0mGET /css/header.css [32m200[0m 40.947 ms - -[0m
+[0mGET /css/footer.css [32m200[0m 9.920 ms - -[0m
+[0mGET /css/layout.css [32m200[0m 11.463 ms - -[0m
+[0mGET /js/landing_page.js [36m304[0m 3.893 ms - -[0m
+[0mGET /js/header.js [36m304[0m 1.953 ms - -[0m
+[0mGET / [32m200[0m 48.861 ms - 4248[0m
+[0mGET /images/landing_page_main.svg [32m200[0m 5.222 ms - 13908[0m
+[0mGET /favicon.ico [33m404[0m 42.444 ms - 150[0m
+[0mGET /css/layout.css [32m200[0m 4.631 ms - 605[0m
+[0mGET /css/header.css [32m200[0m 4.566 ms - 3127[0m
+[0mGET /css/footer.css [32m200[0m 7.078 ms - 104[0m
+[0mGET /css/landing_page.css [32m200[0m 3.578 ms - 1867[0m
+[0mGET /users/sign-in [32m200[0m 38.561 ms - 5808[0m
+[0mGET /css/layout.css [36m304[0m 26.250 ms - -[0m
+[0mGET /css/header.css [36m304[0m 27.918 ms - -[0m
+[0mGET /css/footer.css [36m304[0m 61.508 ms - -[0m
+[0mGET /css/sign_in_page.css [32m200[0m 92.673 ms - -[0m
+[0mGET /css/sign_up_page.css [32m200[0m 94.027 ms - -[0m
+[0mGET /js/header.js [36m304[0m 0.821 ms - -[0m
+[0mGET /images/laptop_sitting.svg [32m200[0m 3.428 ms - 7871[0m
+[0mGET /css/layout.css [36m304[0m 72.495 ms - -[0m
+[0mGET /css/header.css [36m304[0m 72.034 ms - -[0m
+[0mGET /css/sign_in_page.css [32m200[0m 72.749 ms - 3100[0m
+[0mGET /users/sign-in [32m200[0m 35.613 ms - 5793[0m
+[0mGET /js/header.js [36m304[0m 0.686 ms - -[0m
+[0mGET /images/laptop_sitting.svg [36m304[0m 0.595 ms - -[0m
+[0mGET / [32m200[0m 22.927 ms - 4233[0m
+[0mGET /css/layout.css [36m304[0m 13.881 ms - -[0m
+[0mGET /css/header.css [36m304[0m 14.410 ms - -[0m
+[0mGET /css/landing_page.css [36m304[0m 17.423 ms - -[0m
+[0mGET /js/landing_page.js [36m304[0m 0.678 ms - -[0m
+[0mGET /js/header.js [36m304[0m 0.533 ms - -[0m
+[0mGET /images/landing_page_main.svg [36m304[0m 0.513 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 11.319 ms - -[0m
+[0mGET /css/layout.css [36m304[0m 13.986 ms - -[0m
+[0mGET /css/footer.css [36m304[0m 13.831 ms - -[0m
+[0mGET /css/sign_in_page.css [36m304[0m 18.798 ms - -[0m
+[0mGET /js/header.js [36m304[0m 0.699 ms - -[0m
+[0mGET /images/laptop_sitting.svg [36m304[0m 0.577 ms - -[0m
+::1 - - [02/Sep/2020:17:28:27 +0000] "GET /css/footer-a5ac1e3928.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:27 +0000] "GET / HTTP/1.1" 200 4413 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:27 +0000] "GET /css/landing_page-cabfc0d031.css HTTP/1.1" 404 170 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:27 +0000] "GET /js/landing_page-e93609d0d5.js HTTP/1.1" 404 168 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:27 +0000] "GET /js/header-a5cf671dc8.js HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:28 +0000] "GET /css/header-1775efdbf1.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:28 +0000] "GET /css/footer-a5ac1e3928.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:28 +0000] "GET /css/layout-8a2724ce59.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:28 +0000] "GET /css/landing_page-cabfc0d031.css HTTP/1.1" 404 170 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:28 +0000] "GET /images/landing_page_main-df4a645795.svg HTTP/1.1" 404 178 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:28 +0000] "GET /js/landing_page-e93609d0d5.js HTTP/1.1" 404 168 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:28 +0000] "GET /js/header-a5cf671dc8.js HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:28 +0000] "GET /images/favicon-36574458af.jpg HTTP/1.1" 404 168 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:34 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:34 +0000] "GET /css/header-1775efdbf1.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:34 +0000] "GET /css/layout-8a2724ce59.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:34 +0000] "GET /css/footer-a5ac1e3928.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:34 +0000] "GET /css/landing_page-cabfc0d031.css HTTP/1.1" 404 170 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:34 +0000] "GET /js/landing_page-e93609d0d5.js HTTP/1.1" 404 168 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:34 +0000] "GET /images/landing_page_main-df4a645795.svg HTTP/1.1" 404 178 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:34 +0000] "GET /js/header-a5cf671dc8.js HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:34 +0000] "GET /js/landing_page-e93609d0d5.js HTTP/1.1" 404 168 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:34 +0000] "GET /js/header-a5cf671dc8.js HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:50 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:50 +0000] "GET /css/layout-8a2724ce59.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:50 +0000] "GET /css/header-1775efdbf1.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:50 +0000] "GET /css/footer-a5ac1e3928.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:50 +0000] "GET /css/landing_page-cabfc0d031.css HTTP/1.1" 404 170 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:50 +0000] "GET /images/landing_page_main-df4a645795.svg HTTP/1.1" 404 178 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:50 +0000] "GET /js/landing_page-e93609d0d5.js HTTP/1.1" 404 168 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:50 +0000] "GET /js/header-a5cf671dc8.js HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:54 +0000] "GET /users/sign-in HTTP/1.1" 200 5973 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:54 +0000] "GET /css/header-1775efdbf1.css HTTP/1.1" 404 164 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:54 +0000] "GET /css/layout-8a2724ce59.css HTTP/1.1" 404 164 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:54 +0000] "GET /css/sign_in_page-2464920b9c.css HTTP/1.1" 404 170 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:54 +0000] "GET /css/sign_up_page-4c3df472d7.css HTTP/1.1" 404 170 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:54 +0000] "GET /css/footer-a5ac1e3928.css HTTP/1.1" 404 164 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:54 +0000] "GET /js/header-a5cf671dc8.js HTTP/1.1" 404 162 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:54 +0000] "GET /images/laptop_sitting-537d626466.svg HTTP/1.1" 404 175 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:54 +0000] "GET /js/header-a5cf671dc8.js HTTP/1.1" 404 162 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:56 +0000] "GET / HTTP/1.1" 304 - "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:56 +0000] "GET /css/header-1775efdbf1.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:56 +0000] "GET /css/layout-8a2724ce59.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:56 +0000] "GET /css/footer-a5ac1e3928.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:56 +0000] "GET /css/landing_page-cabfc0d031.css HTTP/1.1" 404 170 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:56 +0000] "GET /images/landing_page_main-df4a645795.svg HTTP/1.1" 404 178 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:56 +0000] "GET /js/landing_page-e93609d0d5.js HTTP/1.1" 404 168 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:56 +0000] "GET /js/header-a5cf671dc8.js HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:56 +0000] "GET /js/landing_page-e93609d0d5.js HTTP/1.1" 404 168 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:56 +0000] "GET /js/header-a5cf671dc8.js HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:58 +0000] "GET /css/header-1775efdbf1.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:58 +0000] "GET /css/footer-a5ac1e3928.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:58 +0000] "GET /css/landing_page-cabfc0d031.css HTTP/1.1" 404 170 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:28:58 +0000] "GET /css/layout-8a2724ce59.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:29:59 +0000] "GET / HTTP/1.1" 304 - "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:30:00 +0000] "GET /css/footer-a5ac1e3928.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:30:00 +0000] "GET /css/layout-8a2724ce59.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:30:00 +0000] "GET /css/header-1775efdbf1.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:30:00 +0000] "GET /css/landing_page-cabfc0d031.css HTTP/1.1" 404 170 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:30:00 +0000] "GET /js/landing_page-e93609d0d5.js HTTP/1.1" 404 168 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:30:00 +0000] "GET /js/header-a5cf671dc8.js HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:30:00 +0000] "GET /css/layout-8a2724ce59.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:30:00 +0000] "GET /css/footer-a5ac1e3928.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:30:00 +0000] "GET /css/header-1775efdbf1.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:30:00 +0000] "GET /css/landing_page-cabfc0d031.css HTTP/1.1" 404 170 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:30:00 +0000] "GET /images/landing_page_main-df4a645795.svg HTTP/1.1" 404 178 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:30:00 +0000] "GET /js/landing_page-e93609d0d5.js HTTP/1.1" 404 168 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:30:00 +0000] "GET /js/header-a5cf671dc8.js HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:30:09 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:30:09 +0000] "GET /css/header-1775efdbf1.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:30:09 +0000] "GET /css/layout-8a2724ce59.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:30:09 +0000] "GET /css/footer-a5ac1e3928.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:30:09 +0000] "GET /css/landing_page-cabfc0d031.css HTTP/1.1" 404 170 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:30:09 +0000] "GET /js/landing_page-e93609d0d5.js HTTP/1.1" 404 168 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:30:09 +0000] "GET /js/header-a5cf671dc8.js HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:30:10 +0000] "GET /images/landing_page_main-df4a645795.svg HTTP/1.1" 404 178 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:30:10 +0000] "GET /css/layout-8a2724ce59.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:30:10 +0000] "GET /css/footer-a5ac1e3928.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:30:10 +0000] "GET /css/header-1775efdbf1.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:30:10 +0000] "GET /css/landing_page-cabfc0d031.css HTTP/1.1" 404 170 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:30:10 +0000] "GET /js/landing_page-e93609d0d5.js HTTP/1.1" 404 168 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:30:10 +0000] "GET /js/header-a5cf671dc8.js HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:31:02 +0000] "GET / HTTP/1.1" 200 4422 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:31:03 +0000] "GET /css/header-1775efdbf1.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:31:03 +0000] "GET /css/footer-a5ac1e3928.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:31:03 +0000] "GET /css/layout-8a2724ce59.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:31:03 +0000] "GET /css/landing_page-cabfc0d031.css HTTP/1.1" 404 170 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:31:03 +0000] "GET /js/landing_page-e93609d0d5.js HTTP/1.1" 404 168 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:31:03 +0000] "GET /js/header-a5cf671dc8.js HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:31:03 +0000] "GET /css/layout-8a2724ce59.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:31:03 +0000] "GET /css/header-1775efdbf1.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:31:03 +0000] "GET /css/landing_page-cabfc0d031.css HTTP/1.1" 404 170 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:31:03 +0000] "GET /css/footer-a5ac1e3928.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:31:03 +0000] "GET /images/landing_page_main-df4a645795.svg HTTP/1.1" 404 178 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:31:03 +0000] "GET /js/landing_page-e93609d0d5.js HTTP/1.1" 404 168 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:31:03 +0000] "GET /js/header-a5cf671dc8.js HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:31:03 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:31:04 +0000] "GET /css/layout-8a2724ce59.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:31:04 +0000] "GET /css/header-1775efdbf1.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:31:04 +0000] "GET /css/landing_page-cabfc0d031.css HTTP/1.1" 404 170 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:31:04 +0000] "GET /css/footer-a5ac1e3928.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:31:04 +0000] "GET /js/header-a5cf671dc8.js HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:31:04 +0000] "GET /images/landing_page_main-df4a645795.svg HTTP/1.1" 404 178 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:31:04 +0000] "GET /js/landing_page-e93609d0d5.js HTTP/1.1" 404 168 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:31:04 +0000] "GET /js/landing_page-e93609d0d5.js HTTP/1.1" 404 168 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:31:04 +0000] "GET /js/header-a5cf671dc8.js HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+[0mGET /css/layout.css [32m200[0m 95.089 ms - -[0m
+[0mGET /css/footer.css [32m200[0m 45.308 ms - -[0m
+[0mGET / [32m200[0m 78.706 ms - 4323[0m
+[0mGET /js/landing_page.js [36m304[0m 2.985 ms - -[0m
+[0mGET /js/header.js [36m304[0m 2.262 ms - -[0m
+[0mGET /images/landing_page_main.svg [36m304[0m 0.644 ms - -[0m
+[0mGET /css/header.css [32m200[0m 11.007 ms - 3127[0m
+[0mGET /css/layout.css [32m200[0m 14.929 ms - 605[0m
+[0mGET / [32m200[0m 46.796 ms - 4314[0m
+[0mGET /js/landing_page.js [36m304[0m 0.790 ms - -[0m
+[0mGET /js/header.js [36m304[0m 0.481 ms - -[0m
+[0mGET /images/landing_page_main.svg [36m304[0m 0.550 ms - -[0m
+[0mGET /images/favicon.jpg [32m200[0m 1.840 ms - 24068[0m
+::1 - - [02/Sep/2020:17:37:00 +0000] "GET / HTTP/1.1" 200 4413 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:37:00 +0000] "GET /css/layout-8a2724ce59.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:37:00 +0000] "GET /css/header-1775efdbf1.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:37:00 +0000] "GET /css/footer-a5ac1e3928.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:37:00 +0000] "GET /css/landing_page-cabfc0d031.css HTTP/1.1" 404 170 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:37:00 +0000] "GET /js/landing_page-e93609d0d5.js HTTP/1.1" 404 168 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:37:00 +0000] "GET /js/header-a5cf671dc8.js HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:37:01 +0000] "GET /css/footer-a5ac1e3928.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:37:01 +0000] "GET /css/layout-8a2724ce59.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:37:01 +0000] "GET /css/header-1775efdbf1.css HTTP/1.1" 404 164 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:37:01 +0000] "GET /css/landing_page-cabfc0d031.css HTTP/1.1" 404 170 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:37:01 +0000] "GET /images/landing_page_main-df4a645795.svg HTTP/1.1" 404 178 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:37:01 +0000] "GET /js/landing_page-e93609d0d5.js HTTP/1.1" 404 168 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:37:01 +0000] "GET /js/header-a5cf671dc8.js HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:40:14 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:40:14 +0000] "GET /css/layout-8a2724ce59.css HTTP/1.1" 200 457 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:40:14 +0000] "GET /css/header-1775efdbf1.css HTTP/1.1" 200 2374 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:40:14 +0000] "GET /js/landing_page-e93609d0d5.js HTTP/1.1" 200 262 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:40:14 +0000] "GET /js/header-a5cf671dc8.js HTTP/1.1" 200 88 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:40:14 +0000] "GET /images/landing_page_main-df4a645795.svg HTTP/1.1" 200 13908 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:40:33 +0000] "GET / HTTP/1.1" 200 4443 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:40:33 +0000] "GET /css/layout-8a2724ce59.css HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:40:33 +0000] "GET /css/header-1775efdbf1.css HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:40:33 +0000] "GET /js/landing_page-e93609d0d5.js HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:40:33 +0000] "GET /js/header-a5cf671dc8.js HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:40:33 +0000] "GET /images/landing_page_main-df4a645795.svg HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:42:03 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:42:03 +0000] "GET /css/layout-8a2724ce59.css HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:42:03 +0000] "GET /css/header-1775efdbf1.css HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:42:03 +0000] "GET /css/footer-a5ac1e3928.css HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:42:03 +0000] "GET /css/landing_page-cabfc0d031.css HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:42:03 +0000] "GET /js/landing_page-e93609d0d5.js HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:42:03 +0000] "GET /js/header-a5cf671dc8.js HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:42:04 +0000] "GET /images/landing_page_main-df4a645795.svg HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:47:08 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:47:08 +0000] "GET /css/header-1775efdbf1.css HTTP/1.1" 200 2374 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:47:08 +0000] "GET /css/layout-8a2724ce59.css HTTP/1.1" 200 457 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:47:08 +0000] "GET /js/landing_page-e93609d0d5.js HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:47:08 +0000] "GET /js/header-a5cf671dc8.js HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:47:08 +0000] "GET /images/landing_page_main-df4a645795.svg HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:47:43 +0000] "GET /css/layout-8a2724ce59.css HTTP/1.1" 304 - "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:47:43 +0000] "GET /css/header-1775efdbf1.css HTTP/1.1" 304 - "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:47:43 +0000] "GET /css/footer-a5ac1e3928.css HTTP/1.1" 304 - "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:47:43 +0000] "GET /css/sign_up_page-4c3df472d7.css HTTP/1.1" 200 2330 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:47:43 +0000] "GET /css/sign_in_page-2464920b9c.css HTTP/1.1" 200 2383 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:47:43 +0000] "GET /users/sign-in HTTP/1.1" 200 6003 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:47:44 +0000] "GET /images/laptop_sitting-537d626466.svg HTTP/1.1" 200 7871 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:47:44 +0000] "GET /js/header-a5cf671dc8.js HTTP/1.1" 304 - "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:50:46 +0000] "GET /css/layout-8a2724ce59.css HTTP/1.1" 304 - "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:50:46 +0000] "GET /css/header-1775efdbf1.css HTTP/1.1" 304 - "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:50:46 +0000] "GET /css/footer-a5ac1e3928.css HTTP/1.1" 304 - "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:50:46 +0000] "GET /css/sign_in_page-2464920b9c.css HTTP/1.1" 304 - "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:50:46 +0000] "GET /users/sign-in HTTP/1.1" 200 6006 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:50:46 +0000] "GET /js/header-a5cf671dc8.js HTTP/1.1" 304 - "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:50:46 +0000] "GET /images/laptop_sitting-537d626466.svg HTTP/1.1" 304 - "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:57:21 +0000] "GET /users/sign-in HTTP/1.1" 200 5986 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:57:21 +0000] "GET /css/layout-8a2724ce59.css HTTP/1.1" 304 - "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:57:22 +0000] "GET /css/header-1775efdbf1.css HTTP/1.1" 304 - "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:57:22 +0000] "GET /css/footer-a5ac1e3928.css HTTP/1.1" 304 - "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:57:22 +0000] "GET /js/header-a5cf671dc8.js HTTP/1.1" 304 - "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:17:57:22 +0000] "GET /images/laptop_sitting-537d626466.svg HTTP/1.1" 304 - "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+[0mGET /users/sign-in [32m200[0m 37.222 ms - 6195[0m
+[0mGET /css/header.css [32m200[0m 21.319 ms - -[0m
+[0mGET /css/layout.css [32m200[0m 28.145 ms - -[0m
+[0mGET /css/sign_in_page.css [32m200[0m 13.039 ms - -[0m
+[0mGET /js/header.js [36m304[0m 3.200 ms - -[0m
+[0mGET /images/laptop_sitting.svg [36m304[0m 0.637 ms - -[0m
+[0mGET /images/site.webmanifest [33m404[0m 5.724 ms - 162[0m
+[0mGET /images/favicon-32x32.png [32m200[0m 3.494 ms - 843[0m
+::1 - - [02/Sep/2020:18:10:34 +0000] "GET /css/layout-8a2724ce59.css HTTP/1.1" 304 - "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:18:10:34 +0000] "GET /css/header-1775efdbf1.css HTTP/1.1" 304 - "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:18:10:34 +0000] "GET /css/footer-a5ac1e3928.css HTTP/1.1" 304 - "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:18:10:34 +0000] "GET /css/sign_up_page-4c3df472d7.css HTTP/1.1" 304 - "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:18:10:34 +0000] "GET /css/sign_in_page-2464920b9c.css HTTP/1.1" 304 - "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:18:10:34 +0000] "GET /users/sign-in HTTP/1.1" 200 6283 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:18:10:34 +0000] "GET /images/laptop_sitting-537d626466.svg HTTP/1.1" 304 - "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:18:10:34 +0000] "GET /js/header-a5cf671dc8.js HTTP/1.1" 304 - "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:18:10:35 +0000] "GET /images/favicon-32x32-b7a627392e.png HTTP/1.1" 200 843 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::1 - - [02/Sep/2020:18:10:35 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"

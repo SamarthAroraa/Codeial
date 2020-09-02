@@ -15,8 +15,7 @@ class chatEngine {
         user_email: self.userEmail,
         chatroom: "codeial",
       });
-      self.socket.on("user_joined", function (data) {
-      });
+      self.socket.on("user_joined", function (data) {});
     });
     $(".message-submit").click(function () {
       let msg = $(".message-input").val();
