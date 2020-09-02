@@ -1,7 +1,7 @@
 const nodeMailer = require("../config/nodemailer");
 
 //change when deploying to production
-const DOMAIN = "http://localhost:3000";
+const DOMAIN = "http://codeial.tech";
 
 module.exports.sendLink = function (reset) {
   let link = DOMAIN + "/users/reset-page/" + reset.accessToken;
