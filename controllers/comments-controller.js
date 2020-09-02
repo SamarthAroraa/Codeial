@@ -59,7 +59,6 @@ module.exports.destroy = async function (req, res) {
       }
       return res.redirect("back");
     } else {
-      console.log("deletion unauthorized");
       return res.redirect("back");
     }
   } catch (err) {

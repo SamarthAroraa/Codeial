@@ -21,9 +21,6 @@ module.exports.sendLink = function (reset) {
       if (err) {
         console.log("error in sending reset mail", err);
       }
-      console.log(info);
     }
   );
-  console.log(link);
-  console.log(reset);
 };

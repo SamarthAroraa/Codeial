@@ -16,7 +16,6 @@ exports.newComment = (comment) => {
       if (err) {
         console.log("error in sending comment mail", err);
       }
-      console.log(info);
     }
   );
 };

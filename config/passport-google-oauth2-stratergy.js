@@ -25,7 +25,6 @@ passport.use(
           console.log("error in google stratergy-passport", err);
           return;
         }
-        console.log(profile);
         if (user) {
           //if found , set user to req.user via cb callback
           return cb(null, user);

@@ -23,7 +23,6 @@ module.exports.profile = async function (req, res) {
     })
       .populate("sender")
       .populate("reciever");
-    console.log(friends, "^^^^^^^");
     return res.render("user_profile", {
       title: `${user.name}`,
       profile_user: user,
@@ -65,7 +64,6 @@ module.exports.signIn = function (req, res) {
 module.exports.create = async function (req, res) {
   try {
     if (req.body.password != req.body.confirm_password) {
-      console.log("1");
       req.flash("error", "Passwords do not match");
       return res.redirect("back");
     }
@@ -173,7 +171,6 @@ module.exports.sendResetLink = async function (req, res) {
       isvalid: true,
       accessToken: randomString.generate(),
     });
-    // console.log(reset, "**************************");
     let job = queue
       .create("ResetEmail", reset)
       .priority("high")
@@ -183,7 +180,6 @@ module.exports.sendResetLink = async function (req, res) {
           return;
         }
       });
-    console.log(job.id);
     req.flash("success", `Reset password link mailed to ${req.body.email}`);
   }
   //check if user exists in DB- if yes, flash message the reset email sent and carry on with the listed steps. If does not exist then flash "No users found" and return back
@@ -208,7 +204,6 @@ module.exports.resetPage = async function (req, res) {
 };
 
 module.exports.changePassword = async function (req, res) {
-  console.log("%%%%%%%", req.body);
   if (req.body.password != req.body.confirmPassword) {
     req.flash("error", "Passwords do not match!");
     return res.redirect("back");

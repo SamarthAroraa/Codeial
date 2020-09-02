@@ -14,7 +14,6 @@ class toggleRequest {
         url: $(a_tag).attr("href"),
       })
         .done(function (data) {
-          console.log("done");
           // $(self).attr("like-count", likeCount);
           let array_url = $(a_tag).attr("href").split("/");
           let user_id = array_url[array_url.length - 1];

@@ -16,7 +16,6 @@ function updateScrollbar() {
 
 function setDate() {
   d = new Date();
-  console.log("entered", d);
   if (m != d.getMinutes()) {
     m = d.getMinutes();
     $('<div class="timestamp">' + d.getHours() + ":" + m + "</div>").appendTo(
@@ -38,7 +37,6 @@ function insertMessage() {
   $('<div class="message message-personal">' + msg + "</div>")
     .appendTo($(".mCSB_container"))
     .addClass("new");
-  console.log("entering");
   setDate();
   updateScrollbar();
   $(".message-input").val("");
@@ -52,7 +50,6 @@ function insertMessage() {
 $("#chat-form").submit(function (e) {
   e.preventDefault();
   insertMessage();
-  console.log("insering");
   $(".messages-content").animate(
     { scrollTop: $(".messages-content")[0].scrollHeight + 50 },
     500
@@ -105,6 +102,5 @@ $(".button").click(function () {
 
 //cross chatbox
 $(".chatbox-cross").click(function (e) {
-  console.log("click");
   $(".avenue-messenger").css("display", "none");
 });
