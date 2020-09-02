@@ -23,11 +23,11 @@ const path = require("path");
 
 app.use(logger(env.morgan.mode, env.morgan.options));
 
-chatServer.listen(80, function (err) {
+chatServer.listen(3002, function (err) {
   if (err) {
     return;
   }
-  console.log("chat server running on port 80");
+  console.log("chat server running on port 3002");
 });
 
 if (env.name == "development") {
